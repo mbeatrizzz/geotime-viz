@@ -19,3 +19,11 @@ __pycache__/
 
 # Ignorar arquivos temporários
 *.swp
+
+# Bancos SQLite gerados por dataset
+backend/db/cache/
+backend/experiments/data/
+
+# Dados brutos (grandes demais para o git)
+backend/db/taxis/*.parquet
+backend/db/us-airports/*.csv

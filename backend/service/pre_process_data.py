@@ -1,123 +1,143 @@
 import os
-import json
-import datetime
 import numpy as np
 import pandas as pd
+import pyarrow.parquet as pq
+from sqlalchemy import func
 from .curve import Curve
 from .plots_service import PlotService
+from api.database import SessionLocal
+from api.models import CurveModel
+from config import DATASET, load_dataset_config
 
-def getHour(t):
-    if pd.isna(t):
-        return None
-    t = int(t)
-    hour = t // 100 
-    return hour
+# Rows read per batch: keeps memory bounded for datasets with 100M+ records
+BATCH_SIZE = 2_000_000
+
 
 def data_already_processed():
     try:
-        existing_data = PlotService.get_all_curves()
-        return len(existing_data) > 0
+        with SessionLocal() as db:
+            return (db.query(func.count(CurveModel.primary_key)).scalar() or 0) > 0
     except Exception as e:
         print(f"Error checking existing data: {e}")
         return False
+
+
+def read_batches(filename, columns):
+    """Yield DataFrames of at most BATCH_SIZE rows from a parquet or csv file."""
+    if filename.endswith(".parquet"):
+        for batch in pq.ParquetFile(filename).iter_batches(batch_size=BATCH_SIZE, columns=columns):
+            yield batch.to_pandas()
+    else:
+        yield from pd.read_csv(filename, usecols=columns, chunksize=BATCH_SIZE)
+
+
+def prepare_batch(df, files_details):
+    """Return a frame with columns zone, date, hour and the analysis variables."""
+    time_variable = files_details['time_variable']
+    zone_variable = files_details['zone_variable']
+    hour_variable = files_details.get('time_resolution_variable')
+    variables = files_details['variables']
+
+    # derived variables, e.g. duration = dropoff - pickup (minutes)
+    for name, (end, start) in files_details.get('derived_variables', {}).items():
+        df[name] = (pd.to_datetime(df[end]) - pd.to_datetime(df[start])).dt.total_seconds() / 60.0
+
+    timestamps = pd.to_datetime(df[time_variable])
+    if hour_variable:
+        # hour encoded as HHMM (e.g. CRSDepTime); rows without it are skipped
+        df = df[df[hour_variable].notna()]
+        timestamps = timestamps.loc[df.index]
+        hours = df[hour_variable].astype(int) // 100 % 24
+    else:
+        hours = timestamps.dt.hour
+
+    keep = pd.Series(True, index=df.index)
+    for column, (low, high) in files_details.get('valid_ranges', {}).items():
+        keep &= df[column].between(low, high)
+    if 'date_range' in files_details:
+        first, last = files_details['date_range']
+        keep &= timestamps.between(pd.Timestamp(first), pd.Timestamp(last) + pd.Timedelta(days=1), inclusive="left")
+
+    out = pd.DataFrame({
+        'zone': df[zone_variable].astype(str),
+        'date': timestamps.dt.normalize(),
+        'hour': hours.astype(int),
+    })
+    for var in variables:
+        out[var] = df[var].fillna(0.0).astype(float)   # missing values count as 0
+    out['values'] = 1.0                                # record counter
+    return out[keep]
+
+
+def aggregate_files(files_details):
+    """Sum every variable and count records per (zone, date, hour), file by file."""
+    columns = [
+        files_details['time_variable'],
+        files_details['zone_variable'],
+        *[c for c in [files_details.get('time_resolution_variable')] if c],
+        *[v for v in files_details['variables'] if v not in files_details.get('derived_variables', {})],
+        *[c for pair in files_details.get('derived_variables', {}).values() for c in pair],
+    ]
+    columns = list(dict.fromkeys(columns))
+    keys = ['zone', 'date', 'hour']
+
+    total = None
+    for filename in files_details['filenames']:
+        if not os.path.exists(filename):
+            print(f"File {filename} does not exist. Please check the path.")
+            continue
+        print(f"Reading file: {filename}")
+        for df in read_batches(filename, columns):
+            part = prepare_batch(df, files_details).groupby(keys).sum()
+            total = part if total is None else total.add(part, fill_value=0.0)
+    return total
+
+
+def build_curves(aggregated, files_details):
+    """One Curve per (zone, date) holding hourly sums of each variable and the record count."""
+    variables = files_details['variables']
+    P = files_details['resolution']
+    R = 100
+
+    zone_names = sorted(aggregated.index.get_level_values('zone').unique())
+    zone_ids = {zone: i for i, zone in enumerate(zone_names)}
+    all_dates = sorted(aggregated.index.get_level_values('date').unique())
+    date_ids = {date: j for j, date in enumerate(all_dates)}
+    print(f"Number of days (N): {len(all_dates)}, zones (Z): {len(zone_names)}, resolution (P): {P}")
+
+    C = []
+    for (zone, date), group in aggregated.groupby(level=['zone', 'date']):
+        hours = group.index.get_level_values('hour').to_numpy()
+        curve = Curve(P, date_ids[date], R, variables)
+        curve.zone = zone_ids[zone]
+        curve.zone_name = zone
+        curve.date = pd.Timestamp(date).to_pydatetime()
+        curve.weekDay = curve.date.weekday()
+        for var in variables + ['values']:
+            series = np.zeros(P)
+            series[hours] = group[var].to_numpy()
+            curve.data[var] = series
+        C.append(curve)
+
+    print(f"Built {len(C)} curves (zone, day) with at least one record.")
+    return C
+
 
 def pre_process_data_func():
     if data_already_processed():
         print("Data already processed. Skipping pre-processing.")
         return
-    
-    print("Reading data for the first time")
 
-    with open('./db/files-airports.json') as f:
-        files_details = json.load(f)
+    print(f"Reading data for the first time (dataset: {DATASET})")
+    files_details = load_dataset_config()
 
-    # Read all csv files into a list of DataFrames
-    dataframes = []
-    for filename in files_details['filenames']:
-        if not os.path.exists(filename):
-            print(f"File {filename} does not exist. Please check the path.")
-        else:
-            print(f"Reading file: {filename}")
-            df = pd.read_csv(filename)
-            dataframes.append(df)
-
-    # Concatenate all DataFrames into one
-    if not dataframes:
-        print("No files to read. Please check the files.json configuration.")
+    aggregated = aggregate_files(files_details)
+    if aggregated is None:
+        print("No files to read. Please check the files-<dataset>.json configuration.")
         return
 
-    curves = pd.concat(dataframes, ignore_index=True)
-    
-    # Parameters
-    time_resolution_variable = files_details['time_resolution_variable']
-    time_variable = files_details['time_variable']
-    zone_variable = files_details['zone_variable']
-    variables = files_details['variables']
-    P = files_details['resolution']
+    C = build_curves(aggregated, files_details)
 
-    # Get the number of unique time_variable values
-    R = 100
-    N = curves[time_variable].nunique()
-    Z = curves[zone_variable].nunique()  # Number of zones
-    Z_mapping = {zone: i for i, zone in enumerate(curves[zone_variable].unique())}
-
-    all_dates = curves[time_variable].unique()
-    all_dates.sort()
-    print("all_dates: ", all_dates)
-    dates_mapping_date_to_int = {date: i for i, date in enumerate(all_dates)}
-
-    print(f"Number of time intervals (N): {N}, Number of zones (Z): {Z}, Resolution (P): {P}")
-    print("curves shape: ", curves.shape)
-    print("curves columns: ", curves.columns)
-    print("curves:", curves.head())
-
-    zone_names = curves[zone_variable].unique()
-    all_dates = pd.to_datetime(all_dates)
-    weekdays = [d.weekday() for d in all_dates]
-
-    # Preallocate dictionary
-    C = {}
-
-    # Loop using precomputed values
-    for i in range(Z):
-        zone_name = zone_names[i]
-        for j in range(N):
-            date = all_dates[j]
-            weekday = weekdays[j]
-            curve = Curve(P, j, R, variables)
-            curve.zone = i
-            curve.zone_name = zone_name
-            curve.id = j
-            curve.date = date
-            curve.weekDay = weekday
-            C[(i, j)] = curve
-
-    print("Initialized curves for all zones and time intervals.")
-
-    for i in range(len(curves)):
-        id, zone, hour = curves.at[i, time_variable], curves.at[i, zone_variable], curves.at[i, time_resolution_variable]
-
-        if hour is None or pd.isna(hour):
-            print(f"Skipping curve {i + 1}/{len(curves)} due to missing hour data.")
-            continue
-
-        hour = getHour(hour) % 24
-        zone = Z_mapping[zone]  # Map zone to its index
-        id = dates_mapping_date_to_int[id]  # Map date to its index
-
-        if i % 100000 == 0:
-            print(f"Processing curve {i + 1}/{len(curves)}: id={id}, zone={zone}, hour={hour}")
-            print(f"Type of id: {type(id)}, zone: {type(zone)}, hour: {type(hour)}")
-
-        for var in variables:
-            # if curves.at[i, var] is None or pd.isna(curves.at[i, var]), fill it with 0
-            if pd.isna(curves.at[i, var]):
-                curves.at[i, var] = 0.0
-            C[(zone, id)].data[var][hour] += curves.at[i, var]
-        C[(zone, id)].data['values'][hour] += 1
-
-    # Salvar os dados no database
     print("Saving data to zone database")
-    C = list(C.values())
     PlotService.save_curves_to_db(C)
     print("Data saved to database")

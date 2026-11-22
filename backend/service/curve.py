@@ -79,20 +79,32 @@ class Curve:
             'depth_g_parallel': {var: [float(d) for d in val] for var, val in self.depth_g_parallel.items()},
         }
     
+    def to_dict_raw(self):
+        """Pre-processed curve only (no ED results): what the zone database stores."""
+        return {
+            'variables': self.variables,
+            'data': {var: [float(val) for val in np.asarray(val).tolist()] for var, val in self.data.items()},
+            'id': self.id,
+            'zone': self.zone,
+            'zone_name': self.zone_name,
+            'P': self.P,
+            'date': self.date.isoformat(),
+            'weekDay': self.weekDay,
+        }
+
+    @staticmethod
     def from_dict(data):
         curve = Curve(data['P'], data['id'], 100, data['variables'])
         curve.zone = data['zone']
         curve.zone_name = data['zone_name']
         curve.data = {var: np.array(val) for var, val in data['data'].items()}
         curve.date = datetime.datetime.fromisoformat(data['date'])
-        curve.depth_g = data['depth_g']
         curve.weekDay = data['weekDay']
-        curve.ED_parallel = data['ED_parallel']
-        curve.x = data['x']
-        curve.y = data['y']
-        curve.phi = data['phi']
-        curve.extremal_depth = data['extremal_depth']
-        curve.phi_parallel = data['phi_parallel']
-        curve.depth_g_parallel = data['depth_g_parallel']
-        
+        # ED results are absent from raw curves (zone database): keep the defaults
+        for field, attr in [('depth_g', 'depth_g'), ('ED_parallel', 'ED_parallel'), ('x', 'x'), ('y', 'y'),
+                            ('phi', 'phi'), ('extremal_depth', 'extremal_depth'),
+                            ('phi_parallel', 'phi_parallel'), ('depth_g_parallel', 'depth_g_parallel')]:
+            if field in data:
+                setattr(curve, attr, data[field])
+
         return curve

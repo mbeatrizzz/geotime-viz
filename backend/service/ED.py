@@ -17,8 +17,10 @@ def calculatePointwiseDepth(C, variables, pos, depth_type='L2'):
         data.append(row)
 
     data = np.array(data)
-    depths = []
-    depths = L2_depth(data, data)
+    if depth_type.lower() == 'spatial':
+        depths = spatial_depth(data, data)
+    else:
+        depths = L2_depth(data, data)
 
     for i in range(len(C)):
         C[i].depth_g[pos] = depths[i]
@@ -45,6 +47,10 @@ def ED(C, query: QueryED):
         len_variables = len(variables)
 
     print("variables: ", variables)
+
+    # reset pointwise depths so repeated calls on the same curves do not accumulate
+    for g in range(N):
+        C[g].depth_g = P * [0.0]
 
     if len_variables == 1:
         variable = variables[0]

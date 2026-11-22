@@ -27,36 +27,22 @@ def L2_depth(x, data):
     return depths
 
 def spatial_depth(x, data):
-    depths_tab=[]
-    cov=np.cov(np.transpose(data))
+    """Affine-invariant spatial depth (Eq. 3): 1 - || mean_j u(L (x - z_j)) ||,
+    with u(v) = v/||v||, u(0) = 0, and L the inverse square root of the covariance."""
+    data = np.asarray(data, dtype=float)
+    x = np.asarray(x, dtype=float)
+    cov = np.atleast_2d(np.cov(np.transpose(data)))
 
-    if np.sum(np.isnan(cov))==0:
-        w,v=np.linalg.eig(cov)
-        lambda1=np.linalg.inv(np.matmul(v,np.diag(np.sqrt(w))))
+    if np.sum(np.isnan(cov)) == 0:
+        # symmetric eigendecomposition; floor eigenvalues so a constant variable
+        # (singular covariance) does not make the whitening matrix non-invertible
+        w, v = np.linalg.eigh(cov)
+        w = np.maximum(w, 1e-8)
+        lambda1 = np.linalg.inv(np.matmul(v, np.diag(np.sqrt(w))))
     else:
-        lambda1=np.eye(data.shape[1])
+        lambda1 = np.eye(data.shape[1])
 
-    depths=np.repeat(-1,len(x),axis=0)
-    for i in range(len(x)):
-        interm=[]
-        tmp1_ter=np.transpose(x[i]-data)
-        tmp1=np.transpose(np.matmul(lambda1,tmp1_ter))
-        tmp1_bis=np.sum(tmp1,axis=1)
-        for elements in tmp1_bis:
-            if elements==0:
-                interm.append(False)
-            if elements!=0:
-                interm.append(True)
-        
-        interm=np.array(interm)
-        tmp1=tmp1[interm]
-        tmp2=1/np.sqrt(np.sum(np.power(tmp1,2),axis=1))
-        tmp3=np.zeros([len(tmp1),len(tmp1[0])])
-        tmp1=np.transpose(tmp1)
-        for jj in range(len(tmp1)):
-            tmp3[:,jj]=tmp2*(tmp1[:][jj])
-        tmp4=np.sum(tmp3,axis=0)/len(data)
-        tmp5=np.power((tmp4),2)
-        tmp6=np.sum(tmp5)
-        depths_tab.append(1-np.sqrt(tmp6))
-    return np.array(depths_tab)
+    diff = (x[:, None, :] - data[None, :, :]) @ lambda1.T      # [len(x), len(data), V]
+    norm = np.linalg.norm(diff, axis=2, keepdims=True)
+    unit = np.divide(diff, norm, out=np.zeros_like(diff), where=norm > 0)
+    return 1 - np.linalg.norm(unit.sum(axis=1) / len(data), axis=1)

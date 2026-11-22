@@ -6,6 +6,8 @@ import pandas as pd
 import umap.umap_ as umap
 from sklearn.manifold import TSNE
 
+from config import RANDOM_STATE
+
 from .ED import ED, ED_parallel
 from .curve import Curve
 from schemas.queryED import QueryED
@@ -102,7 +104,7 @@ class PlotService:
                     id=curve.id,
                     date=curve.date,
                     week_day=curve.weekDay,
-                    data=curve.to_dict()
+                    data=curve.to_dict_raw()
                 )
                 db.add(curve_model)
             db.commit()
@@ -196,7 +198,7 @@ class PlotService:
             records = (
                 db.query(CurveFrontendModel)
                 .filter(CurveFrontendModel.zone.in_(parameters.zones))
-                .filter(CurveFrontendModel.week_day.in_(parameters.days_of_week))
+                .filter(CurveFrontendModel.week_day.in_(PlotService.weekday_numbers(parameters.days_of_week)))
                 .all()
             )
 
@@ -213,34 +215,41 @@ class PlotService:
 
     ####################################################################################################################
 
+    WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+    @staticmethod
+    def weekday_numbers(days_of_week):
+        """Weekday names sent by the frontend -> datetime.weekday() numbers (empty = all days)."""
+        if not days_of_week:
+            return list(range(7))
+        return [PlotService.WEEKDAYS.index(d) for d in days_of_week if d in PlotService.WEEKDAYS]
+
     @staticmethod
     def read_data_from_db(db: Session, parameters: Parameters):
         """
-        Recupera os dados da tabela CurveModel filtrando pela zona.
+        Recupera os dados da tabela CurveModel aplicando os filtros escolhidos no frontend:
+        intervalo de datas, dias da semana e (opcionalmente) zonas.
         """
         print(f"Reading data from DB for zones {parameters.zones} db")
+        query = db.query(CurveModel)
 
-        if not parameters.zones:
-            # Get all records if no specific zone or hour interval is provided
-            print("No specific zones provided, retrieving all records")
-            records = db.query(CurveModel).all()
-        else:
+        if parameters.date_interval:
+            start, end = (datetime.fromisoformat(d[:10]).date() for d in parameters.date_interval)
+            query = query.filter(CurveModel.date >= start, CurveModel.date <= end)
+
+        query = query.filter(CurveModel.week_day.in_(PlotService.weekday_numbers(parameters.days_of_week)))
+
+        if parameters.zones:
             zones = [int(z) for z in parameters.zones]
             parameters.zones = zones  # Store the converted zones back in parameters
-            for zone in parameters.zones:
-                if not isinstance(zone, int):
-                    raise ValueError(f"Zone {zone} is not a valid integer ID")
-            records = (
-                db.query(CurveModel)
-                .filter(CurveModel.zone.in_(parameters.zones))
-                .filter(CurveModel.week_day.in_(parameters.days_of_week))
-                .all()
-            )
+            query = query.filter(CurveModel.zone.in_(zones))
+
+        records = query.all()
 
         if not records:
-            raise ValueError(f"No data found in DB for zones {parameters.zones}")
+            raise ValueError(f"No data found in DB for zones {parameters.zones} and dates {parameters.date_interval}")
         
-        print(f"Found {len(records)} records in DB for zones")
+        print(f"Found {len(records)} records in DB")
 
         C = []
         for record in records:
@@ -329,7 +338,9 @@ class PlotService:
                 if valores and pesos:
                     valores = np.stack(valores)      # (n_curves, P)
                     pesos = np.stack(pesos)          # (n_curves, P)
-                    numerador = np.sum(valores * pesos, axis=0)
+                    # stored values are hourly sums; the mean per record is
+                    # (sum of sums) / (sum of counts)
+                    numerador = np.sum(valores, axis=0)
                     denominador = np.sum(pesos, axis=0)
 
                     with np.errstate(divide='ignore', invalid='ignore'):
@@ -468,9 +479,9 @@ class PlotService:
 
          
         if technique == "UMAP":
-            model = umap.UMAP(n_components = 2, n_neighbors = min(len(C) - 2, 30), min_dist = 0.1)
+            model = umap.UMAP(n_components = 2, n_neighbors = min(len(C) - 2, 30), min_dist = 0.1, random_state = RANDOM_STATE)
         else:
-            model = TSNE(n_components = 2, perplexity = min(len(C) - 2, 30), learning_rate = 100)
+            model = TSNE(n_components = 2, perplexity = min(len(C) - 2, 30), learning_rate = 100, random_state = RANDOM_STATE)
         
         X = []
         for curve in C:

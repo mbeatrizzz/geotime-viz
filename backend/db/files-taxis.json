@@ -1,12 +1,32 @@
 {
     "filenames": ["./db/taxis/yellow_tripdata_2012-01.parquet",
-                  "./db/taxis/yellow_tripdata_2012-02.parquet"],
+                  "./db/taxis/yellow_tripdata_2012-02.parquet",
+                  "./db/taxis/yellow_tripdata_2012-03.parquet",
+                  "./db/taxis/yellow_tripdata_2012-04.parquet",
+                  "./db/taxis/yellow_tripdata_2012-05.parquet",
+                  "./db/taxis/yellow_tripdata_2012-06.parquet",
+                  "./db/taxis/yellow_tripdata_2012-07.parquet",
+                  "./db/taxis/yellow_tripdata_2012-08.parquet",
+                  "./db/taxis/yellow_tripdata_2012-09.parquet",
+                  "./db/taxis/yellow_tripdata_2012-10.parquet",
+                  "./db/taxis/yellow_tripdata_2012-11.parquet",
+                  "./db/taxis/yellow_tripdata_2012-12.parquet"],
     "geo_file": "./db/taxis/NYC_Taxi_Zones.geojson",
-    "geo_map_file": "./db/us-airports/us-map.geojson",
+    "geo_map_file": "./db/taxis/NYC_Taxi_Zones.geojson",
     "geo_type": "Region",
     "zone_variable": "PULocationID",
     "time_variable": "tpep_pickup_datetime",
-    "time_resolution_variable": "CRSDepTime",
-    "variables": ["trip_distance", "fare_amount"],
+    "time_resolution_variable": null,
+    "derived_variables": {
+        "duration": ["tpep_dropoff_datetime", "tpep_pickup_datetime"]
+    },
+    "valid_ranges": {
+        "duration": [0, 240],
+        "trip_distance": [0, 100],
+        "fare_amount": [0, 500],
+        "PULocationID": [1, 263]
+    },
+    "date_range": ["2012-01-01", "2012-12-31"],
+    "variables": ["duration", "trip_distance", "fare_amount"],
     "resolution": 24
 }

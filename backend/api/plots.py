@@ -3,7 +3,7 @@ from service.plots_service import PlotService
 from schemas.parameters import Parameters
 from pydantic import BaseModel
 from typing import List, Dict, Any
-import json
+from config import load_dataset_config
 
 from api.database_frontend import SessionLocalFrontend
 from api.database import SessionLocal
@@ -48,8 +48,7 @@ async def fetch_plot_data(
 @router.get("/available_variables", tags=["files"])
 def get_available_variables():
     try:
-        with open('./db/files.json', 'r') as f:
-            files_data = json.load(f)
+        files_data = load_dataset_config()
         return {"status": "success", "variables": files_data.get("variables", [])}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error reading variables: {e}")

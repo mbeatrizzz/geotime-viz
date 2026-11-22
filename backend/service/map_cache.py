@@ -1,6 +1,7 @@
 import geopandas as gpd
 import geojson
 import json
+from config import load_dataset_config
 
 class MapCache:
     def __init__(self):
@@ -11,8 +12,7 @@ class MapCache:
 
     def load_data(self):
         print("Loading map data...")
-        with open('./db/files-airports.json') as f:
-            files_details = json.load(f)
+        files_details = load_dataset_config()
 
         geo_file = files_details['geo_file']
         self.geo_type = files_details['geo_type']
