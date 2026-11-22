@@ -1,0 +1,36 @@
+scenario,variation,kendall_tau,top10_overlap
+taxis / NYC (all zones),Spatial depth,0.855878852324693,0.9
+taxis / NYC (all zones),r = 20 levels,0.8467772134842149,0.9
+taxis / NYC (all zones),r = 10 levels,0.712556801327696,0.7
+taxis / NYC (all zones),2-hour bins (P=12),0.850322261920566,0.9
+taxis / NYC (all zones),4-hour bins (P=6),0.7952530872572341,0.9
+taxis / NYC (all zones),Hours 06-23 only,0.766889489425554,0.7
+taxis / NYC (all zones),Without 'count',0.7778484755699298,0.8
+taxis / NYC (all zones),Without 'duration',0.7100285203321943,0.6
+taxis / NYC (all zones),Without 'trip_distance',0.730748789217189,0.9
+taxis / NYC (all zones),Without 'fare_amount',0.8167738361920296,0.9
+taxis / NYC (all zones),Integrated depth (no ED ordering),0.6745764995809896,0.6
+airports / US (all airports) +cancel,Spatial depth,0.7566284901564488,0.7
+airports / US (all airports) +cancel,r = 20 levels,0.8720179056903175,0.4
+airports / US (all airports) +cancel,r = 10 levels,0.7751027791203076,0.3
+airports / US (all airports) +cancel,2-hour bins (P=12),0.7901339920652743,0.7
+airports / US (all airports) +cancel,4-hour bins (P=6),0.6990493300396735,0.6
+airports / US (all airports) +cancel,Hours 06-23 only,0.7138408563515233,0.2
+airports / US (all airports) +cancel,Without 'DepDelay',0.8446889737255782,0.9
+airports / US (all airports) +cancel,Without 'CarrierDelay',0.8513960625795344,0.9
+airports / US (all airports) +cancel,Without 'WeatherDelay',0.8087281982184295,0.5
+airports / US (all airports) +cancel,Without 'SecurityDelay',0.6444943483793696,0.9
+airports / US (all airports) +cancel,Without 'Cancelled',0.8673553409686353,0.7
+airports / US (all airports) +cancel,Integrated depth (no ED ordering),0.5052623699378697,0.1
+airports / ORD +cancel,Spatial depth,0.8051650572647653,0.8
+airports / ORD +cancel,r = 20 levels,0.894834965742769,0.4
+airports / ORD +cancel,r = 10 levels,0.8013166562165046,0.2
+airports / ORD +cancel,2-hour bins (P=12),0.7818907245576094,0.5
+airports / ORD +cancel,4-hour bins (P=6),0.6649049277502539,0.4
+airports / ORD +cancel,Hours 06-23 only,0.9141253087805973,0.7
+airports / ORD +cancel,Without 'DepDelay',0.8458567258028296,1.0
+airports / ORD +cancel,Without 'CarrierDelay',0.8005838760386256,0.9
+airports / ORD +cancel,Without 'WeatherDelay',0.8810090575641889,0.7
+airports / ORD +cancel,Without 'SecurityDelay',0.7443820645257878,0.6
+airports / ORD +cancel,Without 'Cancelled',0.9111909574069914,0.9
+airports / ORD +cancel,Integrated depth (no ED ordering),0.5663148439254435,0.2

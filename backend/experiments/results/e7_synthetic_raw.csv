@@ -1,0 +1,421 @@
+type,seed,method,AP,P@k
+magnitude_persistent,0,ED (L2),0.9002525252525252,0.7777777777777778
+magnitude_persistent,0,ED (Spatial),0.8538239538239538,0.6666666666666666
+magnitude_persistent,0,Integrated depth (L2),1.0,1.0
+magnitude_persistent,0,MBD / Func. boxplot,1.0,1.0
+magnitude_persistent,0,Isolation Forest,1.0,1.0
+magnitude_persistent,0,LOF,1.0,1.0
+magnitude_persistent,0,Robust z-score,1.0,1.0
+magnitude_persistent,1,ED (L2),0.7838760005426672,0.7777777777777778
+magnitude_persistent,1,ED (Spatial),0.7485177404295053,0.5555555555555556
+magnitude_persistent,1,Integrated depth (L2),1.0,1.0
+magnitude_persistent,1,MBD / Func. boxplot,0.9765432098765433,0.8888888888888888
+magnitude_persistent,1,Isolation Forest,0.9722222222222222,0.8888888888888888
+magnitude_persistent,1,LOF,0.9888888888888889,0.8888888888888888
+magnitude_persistent,1,Robust z-score,0.9888888888888889,0.8888888888888888
+magnitude_persistent,2,ED (L2),0.9172278338945006,0.7777777777777778
+magnitude_persistent,2,ED (Spatial),0.9210858585858586,0.7777777777777778
+magnitude_persistent,2,Integrated depth (L2),1.0,1.0
+magnitude_persistent,2,MBD / Func. boxplot,0.9797979797979798,0.8888888888888888
+magnitude_persistent,2,Isolation Forest,1.0,1.0
+magnitude_persistent,2,LOF,0.9888888888888889,0.8888888888888888
+magnitude_persistent,2,Robust z-score,1.0,1.0
+magnitude_persistent,3,ED (L2),0.609867190422746,0.4444444444444444
+magnitude_persistent,3,ED (Spatial),0.5798641715308382,0.4444444444444444
+magnitude_persistent,3,Integrated depth (L2),0.9534662867996201,0.8888888888888888
+magnitude_persistent,3,MBD / Func. boxplot,1.0,1.0
+magnitude_persistent,3,Isolation Forest,0.9722222222222222,0.8888888888888888
+magnitude_persistent,3,LOF,0.9435897435897436,0.7777777777777778
+magnitude_persistent,3,Robust z-score,0.9797979797979798,0.8888888888888888
+magnitude_persistent,4,ED (L2),0.6505436571226045,0.5555555555555556
+magnitude_persistent,4,ED (Spatial),0.6261110424477128,0.5555555555555556
+magnitude_persistent,4,Integrated depth (L2),0.9888888888888889,0.8888888888888888
+magnitude_persistent,4,MBD / Func. boxplot,0.9355089355089355,0.7777777777777778
+magnitude_persistent,4,Isolation Forest,0.9722222222222222,0.8888888888888888
+magnitude_persistent,4,LOF,0.9376903960237293,0.8888888888888888
+magnitude_persistent,4,Robust z-score,0.9575757575757575,0.7777777777777778
+magnitude_persistent,5,ED (L2),0.8358345358345358,0.6666666666666666
+magnitude_persistent,5,ED (Spatial),0.8339845339845341,0.6666666666666666
+magnitude_persistent,5,Integrated depth (L2),1.0,1.0
+magnitude_persistent,5,MBD / Func. boxplot,0.9479717813051146,0.8888888888888888
+magnitude_persistent,5,Isolation Forest,0.9888888888888889,0.8888888888888888
+magnitude_persistent,5,LOF,1.0,1.0
+magnitude_persistent,5,Robust z-score,0.9722222222222222,0.8888888888888888
+magnitude_persistent,6,ED (L2),0.6756613756613756,0.6666666666666666
+magnitude_persistent,6,ED (Spatial),0.7518881626724764,0.7777777777777778
+magnitude_persistent,6,Integrated depth (L2),0.9722222222222222,0.8888888888888888
+magnitude_persistent,6,MBD / Func. boxplot,0.9365079365079365,0.8888888888888888
+magnitude_persistent,6,Isolation Forest,0.9126984126984126,0.8888888888888888
+magnitude_persistent,6,LOF,0.9068462401795736,0.8888888888888888
+magnitude_persistent,6,Robust z-score,0.9288888888888889,0.8888888888888888
+magnitude_persistent,7,ED (L2),0.6971529015646662,0.5555555555555556
+magnitude_persistent,7,ED (Spatial),0.6562048047280115,0.5555555555555556
+magnitude_persistent,7,Integrated depth (L2),1.0,1.0
+magnitude_persistent,7,MBD / Func. boxplot,0.9017094017094016,0.7777777777777778
+magnitude_persistent,7,Isolation Forest,0.9444444444444444,0.8888888888888888
+magnitude_persistent,7,LOF,0.9166666666666666,0.7777777777777778
+magnitude_persistent,7,Robust z-score,0.9444444444444444,0.8888888888888888
+magnitude_persistent,8,ED (L2),0.8359301030353662,0.7777777777777778
+magnitude_persistent,8,ED (Spatial),0.8223276121650105,0.7777777777777778
+magnitude_persistent,8,Integrated depth (L2),0.9765432098765433,0.8888888888888888
+magnitude_persistent,8,MBD / Func. boxplot,0.9888888888888889,0.8888888888888888
+magnitude_persistent,8,Isolation Forest,0.9765432098765433,0.8888888888888888
+magnitude_persistent,8,LOF,0.9765432098765433,0.8888888888888888
+magnitude_persistent,8,Robust z-score,0.9765432098765433,0.8888888888888888
+magnitude_persistent,9,ED (L2),0.8066017316017317,0.7777777777777778
+magnitude_persistent,9,ED (Spatial),0.7938573285064513,0.8888888888888888
+magnitude_persistent,9,Integrated depth (L2),1.0,1.0
+magnitude_persistent,9,MBD / Func. boxplot,1.0,1.0
+magnitude_persistent,9,Isolation Forest,0.9888888888888889,0.8888888888888888
+magnitude_persistent,9,LOF,0.9467813051146384,0.8888888888888888
+magnitude_persistent,9,Robust z-score,1.0,1.0
+magnitude_isolated,0,ED (L2),1.0,1.0
+magnitude_isolated,0,ED (Spatial),1.0,1.0
+magnitude_isolated,0,Integrated depth (L2),0.12262886249730859,0.0
+magnitude_isolated,0,MBD / Func. boxplot,0.04490874549325625,0.0
+magnitude_isolated,0,Isolation Forest,0.6274714564188248,0.6666666666666666
+magnitude_isolated,0,LOF,1.0,1.0
+magnitude_isolated,0,Robust z-score,0.5753256003256004,0.5555555555555556
+magnitude_isolated,1,ED (L2),1.0,1.0
+magnitude_isolated,1,ED (Spatial),1.0,1.0
+magnitude_isolated,1,Integrated depth (L2),0.3030544562725305,0.3333333333333333
+magnitude_isolated,1,MBD / Func. boxplot,0.08644906524059169,0.1111111111111111
+magnitude_isolated,1,Isolation Forest,0.6038359301517197,0.4444444444444444
+magnitude_isolated,1,LOF,1.0,1.0
+magnitude_isolated,1,Robust z-score,0.5603259485612426,0.5555555555555556
+magnitude_isolated,2,ED (L2),1.0,1.0
+magnitude_isolated,2,ED (Spatial),1.0,1.0
+magnitude_isolated,2,Integrated depth (L2),0.13739302074048929,0.2222222222222222
+magnitude_isolated,2,MBD / Func. boxplot,0.053252521245993445,0.1111111111111111
+magnitude_isolated,2,Isolation Forest,0.38523697419690595,0.2222222222222222
+magnitude_isolated,2,LOF,1.0,1.0
+magnitude_isolated,2,Robust z-score,0.33015234583862035,0.2222222222222222
+magnitude_isolated,3,ED (L2),1.0,1.0
+magnitude_isolated,3,ED (Spatial),1.0,1.0
+magnitude_isolated,3,Integrated depth (L2),0.17255351920554599,0.2222222222222222
+magnitude_isolated,3,MBD / Func. boxplot,0.04969289531350606,0.0
+magnitude_isolated,3,Isolation Forest,0.4517938488526723,0.4444444444444444
+magnitude_isolated,3,LOF,1.0,1.0
+magnitude_isolated,3,Robust z-score,0.5206555789889122,0.5555555555555556
+magnitude_isolated,4,ED (L2),1.0,1.0
+magnitude_isolated,4,ED (Spatial),1.0,1.0
+magnitude_isolated,4,Integrated depth (L2),0.24086026024431823,0.3333333333333333
+magnitude_isolated,4,MBD / Func. boxplot,0.07057455090386032,0.1111111111111111
+magnitude_isolated,4,Isolation Forest,0.416670058336725,0.4444444444444444
+magnitude_isolated,4,LOF,1.0,1.0
+magnitude_isolated,4,Robust z-score,0.46667684167684165,0.4444444444444444
+magnitude_isolated,5,ED (L2),1.0,1.0
+magnitude_isolated,5,ED (Spatial),1.0,1.0
+magnitude_isolated,5,Integrated depth (L2),0.17492149712285995,0.1111111111111111
+magnitude_isolated,5,MBD / Func. boxplot,0.06876083348176591,0.0
+magnitude_isolated,5,Isolation Forest,0.5093297216104234,0.5555555555555556
+magnitude_isolated,5,LOF,1.0,1.0
+magnitude_isolated,5,Robust z-score,0.5698477267104718,0.5555555555555556
+magnitude_isolated,6,ED (L2),1.0,1.0
+magnitude_isolated,6,ED (Spatial),1.0,1.0
+magnitude_isolated,6,Integrated depth (L2),0.10022522171719317,0.1111111111111111
+magnitude_isolated,6,MBD / Func. boxplot,0.05214780501648902,0.0
+magnitude_isolated,6,Isolation Forest,0.36293743618305024,0.4444444444444444
+magnitude_isolated,6,LOF,1.0,1.0
+magnitude_isolated,6,Robust z-score,0.3269355246124215,0.4444444444444444
+magnitude_isolated,7,ED (L2),1.0,1.0
+magnitude_isolated,7,ED (Spatial),1.0,1.0
+magnitude_isolated,7,Integrated depth (L2),0.15198928683300736,0.1111111111111111
+magnitude_isolated,7,MBD / Func. boxplot,0.05845291595731361,0.1111111111111111
+magnitude_isolated,7,Isolation Forest,0.38240139490139485,0.2222222222222222
+magnitude_isolated,7,LOF,1.0,1.0
+magnitude_isolated,7,Robust z-score,0.3103775387929923,0.3333333333333333
+magnitude_isolated,8,ED (L2),1.0,1.0
+magnitude_isolated,8,ED (Spatial),1.0,1.0
+magnitude_isolated,8,Integrated depth (L2),0.18967177105967412,0.1111111111111111
+magnitude_isolated,8,MBD / Func. boxplot,0.04266614510800525,0.0
+magnitude_isolated,8,Isolation Forest,0.5378461694251168,0.5555555555555556
+magnitude_isolated,8,LOF,1.0,1.0
+magnitude_isolated,8,Robust z-score,0.5553826347943995,0.4444444444444444
+magnitude_isolated,9,ED (L2),0.9626543209876544,0.8888888888888888
+magnitude_isolated,9,ED (Spatial),0.9626543209876544,0.8888888888888888
+magnitude_isolated,9,Integrated depth (L2),0.10701833991138149,0.1111111111111111
+magnitude_isolated,9,MBD / Func. boxplot,0.038658336701063015,0.0
+magnitude_isolated,9,Isolation Forest,0.4535328868662201,0.5555555555555556
+magnitude_isolated,9,LOF,1.0,1.0
+magnitude_isolated,9,Robust z-score,0.4722877462733765,0.4444444444444444
+shape_phase,0,ED (L2),1.0,1.0
+shape_phase,0,ED (Spatial),1.0,1.0
+shape_phase,0,Integrated depth (L2),1.0,1.0
+shape_phase,0,MBD / Func. boxplot,0.8496913580246913,0.8888888888888888
+shape_phase,0,Isolation Forest,1.0,1.0
+shape_phase,0,LOF,1.0,1.0
+shape_phase,0,Robust z-score,1.0,1.0
+shape_phase,1,ED (L2),1.0,1.0
+shape_phase,1,ED (Spatial),0.9888888888888889,0.8888888888888888
+shape_phase,1,Integrated depth (L2),1.0,1.0
+shape_phase,1,MBD / Func. boxplot,0.6836299502966169,0.7777777777777778
+shape_phase,1,Isolation Forest,1.0,1.0
+shape_phase,1,LOF,1.0,1.0
+shape_phase,1,Robust z-score,1.0,1.0
+shape_phase,2,ED (L2),0.9888888888888889,0.8888888888888888
+shape_phase,2,ED (Spatial),0.9888888888888889,0.8888888888888888
+shape_phase,2,Integrated depth (L2),1.0,1.0
+shape_phase,2,MBD / Func. boxplot,0.9094356261022928,0.7777777777777778
+shape_phase,2,Isolation Forest,1.0,1.0
+shape_phase,2,LOF,1.0,1.0
+shape_phase,2,Robust z-score,1.0,1.0
+shape_phase,3,ED (L2),1.0,1.0
+shape_phase,3,ED (Spatial),1.0,1.0
+shape_phase,3,Integrated depth (L2),1.0,1.0
+shape_phase,3,MBD / Func. boxplot,0.6445646945646947,0.6666666666666666
+shape_phase,3,Isolation Forest,1.0,1.0
+shape_phase,3,LOF,1.0,1.0
+shape_phase,3,Robust z-score,1.0,1.0
+shape_phase,4,ED (L2),0.9174603174603173,0.8888888888888888
+shape_phase,4,ED (Spatial),0.8984126984126983,0.8888888888888888
+shape_phase,4,Integrated depth (L2),0.9658119658119657,0.8888888888888888
+shape_phase,4,MBD / Func. boxplot,0.560040885040885,0.6666666666666666
+shape_phase,4,Isolation Forest,0.9722222222222222,0.8888888888888888
+shape_phase,4,LOF,1.0,1.0
+shape_phase,4,Robust z-score,0.9658119658119657,0.8888888888888888
+shape_phase,5,ED (L2),0.8943001443001444,0.7777777777777778
+shape_phase,5,ED (Spatial),0.8396809347264352,0.7777777777777778
+shape_phase,5,Integrated depth (L2),0.9888888888888889,0.8888888888888888
+shape_phase,5,MBD / Func. boxplot,0.6902227402227402,0.6666666666666666
+shape_phase,5,Isolation Forest,1.0,1.0
+shape_phase,5,LOF,1.0,1.0
+shape_phase,5,Robust z-score,1.0,1.0
+shape_phase,6,ED (L2),1.0,1.0
+shape_phase,6,ED (Spatial),0.9575757575757575,0.7777777777777778
+shape_phase,6,Integrated depth (L2),0.9888888888888889,0.8888888888888888
+shape_phase,6,MBD / Func. boxplot,0.6823953823953823,0.6666666666666666
+shape_phase,6,Isolation Forest,1.0,1.0
+shape_phase,6,LOF,1.0,1.0
+shape_phase,6,Robust z-score,1.0,1.0
+shape_phase,7,ED (L2),0.911217437533227,0.7777777777777778
+shape_phase,7,ED (Spatial),0.8788788788788788,0.7777777777777778
+shape_phase,7,Integrated depth (L2),0.9888888888888889,0.8888888888888888
+shape_phase,7,MBD / Func. boxplot,0.7439474106140773,0.7777777777777778
+shape_phase,7,Isolation Forest,0.9888888888888889,0.8888888888888888
+shape_phase,7,LOF,1.0,1.0
+shape_phase,7,Robust z-score,0.9797979797979798,0.8888888888888888
+shape_phase,8,ED (L2),0.9797979797979798,0.8888888888888888
+shape_phase,8,ED (Spatial),0.9797979797979798,0.8888888888888888
+shape_phase,8,Integrated depth (L2),0.9765432098765433,0.8888888888888888
+shape_phase,8,MBD / Func. boxplot,0.7856701940035273,0.8888888888888888
+shape_phase,8,Isolation Forest,0.9765432098765433,0.8888888888888888
+shape_phase,8,LOF,1.0,1.0
+shape_phase,8,Robust z-score,0.9765432098765433,0.8888888888888888
+shape_phase,9,ED (L2),0.9467813051146384,0.8888888888888888
+shape_phase,9,ED (Spatial),0.9467813051146384,0.8888888888888888
+shape_phase,9,Integrated depth (L2),1.0,1.0
+shape_phase,9,MBD / Func. boxplot,0.8794973544973544,0.7777777777777778
+shape_phase,9,Isolation Forest,0.9888888888888889,0.8888888888888888
+shape_phase,9,LOF,1.0,1.0
+shape_phase,9,Robust z-score,1.0,1.0
+amplitude,0,ED (L2),0.44199577534622464,0.3333333333333333
+amplitude,0,ED (Spatial),0.3281548962410982,0.3333333333333333
+amplitude,0,Integrated depth (L2),0.16034095506538407,0.1111111111111111
+amplitude,0,MBD / Func. boxplot,0.3977673561006895,0.4444444444444444
+amplitude,0,Isolation Forest,0.7595830095830096,0.6666666666666666
+amplitude,0,LOF,1.0,1.0
+amplitude,0,Robust z-score,0.7933641975308642,0.7777777777777778
+amplitude,1,ED (L2),0.3553260879010014,0.3333333333333333
+amplitude,1,ED (Spatial),0.3620148270449907,0.3333333333333333
+amplitude,1,Integrated depth (L2),0.12177898847138323,0.2222222222222222
+amplitude,1,MBD / Func. boxplot,0.2809691464625051,0.0
+amplitude,1,Isolation Forest,0.7593314093314093,0.6666666666666666
+amplitude,1,LOF,1.0,1.0
+amplitude,1,Robust z-score,0.6218855218855218,0.4444444444444444
+amplitude,2,ED (L2),0.2537271887639085,0.3333333333333333
+amplitude,2,ED (Spatial),0.20230178516670627,0.1111111111111111
+amplitude,2,Integrated depth (L2),0.10349685783986703,0.1111111111111111
+amplitude,2,MBD / Func. boxplot,0.4161542161542162,0.3333333333333333
+amplitude,2,Isolation Forest,0.49527838719015194,0.3333333333333333
+amplitude,2,LOF,1.0,1.0
+amplitude,2,Robust z-score,0.6136042969376302,0.5555555555555556
+amplitude,3,ED (L2),0.2940267364307062,0.2222222222222222
+amplitude,3,ED (Spatial),0.14267999044830043,0.1111111111111111
+amplitude,3,Integrated depth (L2),0.11830598746961643,0.0
+amplitude,3,MBD / Func. boxplot,0.3872107830441164,0.2222222222222222
+amplitude,3,Isolation Forest,0.42318905676748814,0.4444444444444444
+amplitude,3,LOF,1.0,1.0
+amplitude,3,Robust z-score,0.5968975468975468,0.6666666666666666
+amplitude,4,ED (L2),0.43294117977662283,0.3333333333333333
+amplitude,4,ED (Spatial),0.26020873165260533,0.3333333333333333
+amplitude,4,Integrated depth (L2),0.17043603265667465,0.1111111111111111
+amplitude,4,MBD / Func. boxplot,0.34913419913419913,0.2222222222222222
+amplitude,4,Isolation Forest,0.556480093980094,0.4444444444444444
+amplitude,4,LOF,1.0,1.0
+amplitude,4,Robust z-score,0.6267094017094018,0.5555555555555556
+amplitude,5,ED (L2),0.09341231658741325,0.1111111111111111
+amplitude,5,ED (Spatial),0.11195644951363166,0.1111111111111111
+amplitude,5,Integrated depth (L2),0.06463759792846283,0.0
+amplitude,5,MBD / Func. boxplot,0.36310541310541306,0.3333333333333333
+amplitude,5,Isolation Forest,0.4412946225123728,0.3333333333333333
+amplitude,5,LOF,1.0,1.0
+amplitude,5,Robust z-score,0.44572922204501153,0.3333333333333333
+amplitude,6,ED (L2),0.23992059995034218,0.2222222222222222
+amplitude,6,ED (Spatial),0.1937319655309006,0.2222222222222222
+amplitude,6,Integrated depth (L2),0.09425401132047745,0.0
+amplitude,6,MBD / Func. boxplot,0.28218537902490426,0.0
+amplitude,6,Isolation Forest,0.46045388595922543,0.4444444444444444
+amplitude,6,LOF,0.9888888888888889,0.8888888888888888
+amplitude,6,Robust z-score,0.5234455667789001,0.5555555555555556
+amplitude,7,ED (L2),0.17133747512896413,0.2222222222222222
+amplitude,7,ED (Spatial),0.14875996765397803,0.2222222222222222
+amplitude,7,Integrated depth (L2),0.109179997662952,0.0
+amplitude,7,MBD / Func. boxplot,0.38176746093412756,0.3333333333333333
+amplitude,7,Isolation Forest,0.5496133496133496,0.3333333333333333
+amplitude,7,LOF,1.0,1.0
+amplitude,7,Robust z-score,0.5213111507229155,0.4444444444444444
+amplitude,8,ED (L2),0.374789795332431,0.5555555555555556
+amplitude,8,ED (Spatial),0.23239916781974757,0.3333333333333333
+amplitude,8,Integrated depth (L2),0.17018297599801147,0.1111111111111111
+amplitude,8,MBD / Func. boxplot,0.6009139009139008,0.6666666666666666
+amplitude,8,Isolation Forest,0.6828153328153328,0.5555555555555556
+amplitude,8,LOF,0.7856701940035273,0.8888888888888888
+amplitude,8,Robust z-score,0.7065527065527066,0.6666666666666666
+amplitude,9,ED (L2),0.21596796995030712,0.3333333333333333
+amplitude,9,ED (Spatial),0.1419534180213462,0.1111111111111111
+amplitude,9,Integrated depth (L2),0.15114956626899934,0.1111111111111111
+amplitude,9,MBD / Func. boxplot,0.40055772114595645,0.3333333333333333
+amplitude,9,Isolation Forest,0.6417107583774251,0.7777777777777778
+amplitude,9,LOF,0.7856701940035273,0.8888888888888888
+amplitude,9,Robust z-score,0.6926918760252093,0.5555555555555556
+single_variable,0,ED (L2),1.0,1.0
+single_variable,0,ED (Spatial),1.0,1.0
+single_variable,0,Integrated depth (L2),1.0,1.0
+single_variable,0,MBD / Func. boxplot,0.12834117984980054,0.0
+single_variable,0,Isolation Forest,1.0,1.0
+single_variable,0,LOF,1.0,1.0
+single_variable,0,Robust z-score,0.9888888888888889,0.8888888888888888
+single_variable,1,ED (L2),1.0,1.0
+single_variable,1,ED (Spatial),1.0,1.0
+single_variable,1,Integrated depth (L2),1.0,1.0
+single_variable,1,MBD / Func. boxplot,0.23810126403688056,0.2222222222222222
+single_variable,1,Isolation Forest,1.0,1.0
+single_variable,1,LOF,1.0,1.0
+single_variable,1,Robust z-score,0.9467813051146384,0.8888888888888888
+single_variable,2,ED (L2),1.0,1.0
+single_variable,2,ED (Spatial),1.0,1.0
+single_variable,2,Integrated depth (L2),1.0,1.0
+single_variable,2,MBD / Func. boxplot,0.1160807246803501,0.1111111111111111
+single_variable,2,Isolation Forest,0.9888888888888889,0.8888888888888888
+single_variable,2,LOF,1.0,1.0
+single_variable,2,Robust z-score,0.9191718775052108,0.8888888888888888
+single_variable,3,ED (L2),1.0,1.0
+single_variable,3,ED (Spatial),1.0,1.0
+single_variable,3,Integrated depth (L2),1.0,1.0
+single_variable,3,MBD / Func. boxplot,0.14613144335992956,0.2222222222222222
+single_variable,3,Isolation Forest,0.9459876543209877,0.8888888888888888
+single_variable,3,LOF,1.0,1.0
+single_variable,3,Robust z-score,0.7972663139329806,0.7777777777777778
+single_variable,4,ED (L2),1.0,1.0
+single_variable,4,ED (Spatial),1.0,1.0
+single_variable,4,Integrated depth (L2),1.0,1.0
+single_variable,4,MBD / Func. boxplot,0.1635937184920023,0.2222222222222222
+single_variable,4,Isolation Forest,0.9888888888888889,0.8888888888888888
+single_variable,4,LOF,1.0,1.0
+single_variable,4,Robust z-score,0.9083333333333334,0.7777777777777778
+single_variable,5,ED (L2),1.0,1.0
+single_variable,5,ED (Spatial),1.0,1.0
+single_variable,5,Integrated depth (L2),1.0,1.0
+single_variable,5,MBD / Func. boxplot,0.18353037520965432,0.2222222222222222
+single_variable,5,Isolation Forest,0.9888888888888889,0.8888888888888888
+single_variable,5,LOF,1.0,1.0
+single_variable,5,Robust z-score,0.9013548180214848,0.7777777777777778
+single_variable,6,ED (L2),1.0,1.0
+single_variable,6,ED (Spatial),1.0,1.0
+single_variable,6,Integrated depth (L2),1.0,1.0
+single_variable,6,MBD / Func. boxplot,0.1341474938822786,0.1111111111111111
+single_variable,6,Isolation Forest,0.9626543209876544,0.8888888888888888
+single_variable,6,LOF,1.0,1.0
+single_variable,6,Robust z-score,0.8290715457382124,0.7777777777777778
+single_variable,7,ED (L2),1.0,1.0
+single_variable,7,ED (Spatial),1.0,1.0
+single_variable,7,Integrated depth (L2),1.0,1.0
+single_variable,7,MBD / Func. boxplot,0.14604607983619536,0.1111111111111111
+single_variable,7,Isolation Forest,1.0,1.0
+single_variable,7,LOF,1.0,1.0
+single_variable,7,Robust z-score,0.8675925925925926,0.7777777777777778
+single_variable,8,ED (L2),1.0,1.0
+single_variable,8,ED (Spatial),1.0,1.0
+single_variable,8,Integrated depth (L2),1.0,1.0
+single_variable,8,MBD / Func. boxplot,0.12507674734675442,0.1111111111111111
+single_variable,8,Isolation Forest,0.9467813051146384,0.8888888888888888
+single_variable,8,LOF,1.0,1.0
+single_variable,8,Robust z-score,0.8782627865961199,0.8888888888888888
+single_variable,9,ED (L2),1.0,1.0
+single_variable,9,ED (Spatial),1.0,1.0
+single_variable,9,Integrated depth (L2),1.0,1.0
+single_variable,9,MBD / Func. boxplot,0.1055121264041141,0.1111111111111111
+single_variable,9,Isolation Forest,0.9626543209876544,0.8888888888888888
+single_variable,9,LOF,1.0,1.0
+single_variable,9,Robust z-score,0.9138278388278389,0.7777777777777778
+collapse,0,ED (L2),1.0,1.0
+collapse,0,ED (Spatial),0.6955433455433455,0.5555555555555556
+collapse,0,Integrated depth (L2),1.0,1.0
+collapse,0,MBD / Func. boxplot,1.0,1.0
+collapse,0,Isolation Forest,1.0,1.0
+collapse,0,LOF,1.0,1.0
+collapse,0,Robust z-score,1.0,1.0
+collapse,1,ED (L2),1.0,1.0
+collapse,1,ED (Spatial),0.7610989118235495,0.5555555555555556
+collapse,1,Integrated depth (L2),1.0,1.0
+collapse,1,MBD / Func. boxplot,1.0,1.0
+collapse,1,Isolation Forest,1.0,1.0
+collapse,1,LOF,1.0,1.0
+collapse,1,Robust z-score,1.0,1.0
+collapse,2,ED (L2),1.0,1.0
+collapse,2,ED (Spatial),0.8707070707070708,0.6666666666666666
+collapse,2,Integrated depth (L2),1.0,1.0
+collapse,2,MBD / Func. boxplot,1.0,1.0
+collapse,2,Isolation Forest,1.0,1.0
+collapse,2,LOF,1.0,1.0
+collapse,2,Robust z-score,1.0,1.0
+collapse,3,ED (L2),1.0,1.0
+collapse,3,ED (Spatial),0.5843526299408652,0.6666666666666666
+collapse,3,Integrated depth (L2),1.0,1.0
+collapse,3,MBD / Func. boxplot,1.0,1.0
+collapse,3,Isolation Forest,1.0,1.0
+collapse,3,LOF,1.0,1.0
+collapse,3,Robust z-score,1.0,1.0
+collapse,4,ED (L2),1.0,1.0
+collapse,4,ED (Spatial),0.7206228956228956,0.6666666666666666
+collapse,4,Integrated depth (L2),1.0,1.0
+collapse,4,MBD / Func. boxplot,1.0,1.0
+collapse,4,Isolation Forest,1.0,1.0
+collapse,4,LOF,1.0,1.0
+collapse,4,Robust z-score,1.0,1.0
+collapse,5,ED (L2),1.0,1.0
+collapse,5,ED (Spatial),0.47667852581645687,0.6666666666666666
+collapse,5,Integrated depth (L2),1.0,1.0
+collapse,5,MBD / Func. boxplot,1.0,1.0
+collapse,5,Isolation Forest,1.0,1.0
+collapse,5,LOF,1.0,1.0
+collapse,5,Robust z-score,1.0,1.0
+collapse,6,ED (L2),1.0,1.0
+collapse,6,ED (Spatial),0.7243265993265994,0.6666666666666666
+collapse,6,Integrated depth (L2),1.0,1.0
+collapse,6,MBD / Func. boxplot,1.0,1.0
+collapse,6,Isolation Forest,1.0,1.0
+collapse,6,LOF,1.0,1.0
+collapse,6,Robust z-score,1.0,1.0
+collapse,7,ED (L2),1.0,1.0
+collapse,7,ED (Spatial),0.9575757575757575,0.7777777777777778
+collapse,7,Integrated depth (L2),1.0,1.0
+collapse,7,MBD / Func. boxplot,1.0,1.0
+collapse,7,Isolation Forest,1.0,1.0
+collapse,7,LOF,1.0,1.0
+collapse,7,Robust z-score,1.0,1.0
+collapse,8,ED (L2),1.0,1.0
+collapse,8,ED (Spatial),0.7223375390042057,0.7777777777777778
+collapse,8,Integrated depth (L2),1.0,1.0
+collapse,8,MBD / Func. boxplot,1.0,1.0
+collapse,8,Isolation Forest,0.9467813051146384,0.8888888888888888
+collapse,8,LOF,1.0,1.0
+collapse,8,Robust z-score,1.0,1.0
+collapse,9,ED (L2),1.0,1.0
+collapse,9,ED (Spatial),0.8566544566544566,0.6666666666666666
+collapse,9,Integrated depth (L2),1.0,1.0
+collapse,9,MBD / Func. boxplot,1.0,1.0
+collapse,9,Isolation Forest,1.0,1.0
+collapse,9,LOF,1.0,1.0
+collapse,9,Robust z-score,1.0,1.0

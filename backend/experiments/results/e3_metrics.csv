@@ -1,0 +1,190 @@
+dataset,scenario,events,n_events,method,P@5,EvR@5,P@10,EvR@10,P@20,EvR@20,AP
+taxis,NYC (all zones),all,11,ED (L2),0.8,0.18181818181818182,0.6,0.36363636363636365,0.5,0.6363636363636364,0.5437762786057289
+taxis,NYC (all zones),all,11,ED (Spatial),0.6,0.18181818181818182,0.6,0.36363636363636365,0.45,0.6363636363636364,0.4874924847105089
+taxis,NYC (all zones),all,11,Integrated depth (L2),0.8,0.18181818181818182,0.8,0.5454545454545454,0.6,0.7272727272727273,0.7681004740873162
+taxis,NYC (all zones),all,11,MBD / Func. boxplot,0.6,0.18181818181818182,0.5,0.36363636363636365,0.45,0.6363636363636364,0.5076629371108159
+taxis,NYC (all zones),all,11,Isolation Forest,0.8,0.18181818181818182,0.8,0.45454545454545453,0.6,0.8181818181818182,0.7397398439414891
+taxis,NYC (all zones),all,11,LOF,0.8,0.18181818181818182,0.7,0.36363636363636365,0.6,0.7272727272727273,0.6604786154449925
+taxis,NYC (all zones),all,11,Robust z-score,0.6,0.18181818181818182,0.6,0.36363636363636365,0.5,0.6363636363636364,0.4896749046139317
+taxis,NYC (all zones),disruption,4,ED (L2),0.8,0.5,0.5,0.75,0.35,1.0,0.5607059929234852
+taxis,NYC (all zones),disruption,4,ED (Spatial),0.6,0.5,0.5,0.75,0.3,1.0,0.4933212560386473
+taxis,NYC (all zones),disruption,4,Integrated depth (L2),0.6,0.25,0.5,0.75,0.3,0.75,0.6496628371628371
+taxis,NYC (all zones),disruption,4,MBD / Func. boxplot,0.4,0.25,0.3,0.5,0.25,0.75,0.37650876611289497
+taxis,NYC (all zones),disruption,4,Isolation Forest,0.6,0.25,0.5,0.5,0.3,0.75,0.6127038284296349
+taxis,NYC (all zones),disruption,4,LOF,0.6,0.25,0.6,0.75,0.35,1.0,0.6244791666666667
+taxis,NYC (all zones),disruption,4,Robust z-score,0.4,0.25,0.4,0.5,0.25,0.5,0.37535531902308217
+taxis,NYC (all zones),artifact,2,ED (L2),0.2,0.5,0.1,0.5,0.1,1.0,0.5625
+taxis,NYC (all zones),artifact,2,ED (Spatial),0.2,0.5,0.1,0.5,0.1,1.0,0.5625
+taxis,NYC (all zones),artifact,2,Integrated depth (L2),0.0,0.0,0.0,0.0,0.05,0.5,0.07107843137254902
+taxis,NYC (all zones),artifact,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.034922394678492244
+taxis,NYC (all zones),artifact,2,Isolation Forest,0.0,0.0,0.0,0.0,0.05,0.5,0.067816091954023
+taxis,NYC (all zones),artifact,2,LOF,0.2,0.5,0.1,0.5,0.05,0.5,0.2688679245283019
+taxis,NYC (all zones),artifact,2,Robust z-score,0.2,0.5,0.1,0.5,0.05,0.5,0.15202702702702703
+taxis,JFK + LGA,all,1,ED (L2),0.4,1.0,0.3,1.0,0.15,1.0,0.8095238095238094
+taxis,JFK + LGA,all,1,ED (Spatial),0.4,1.0,0.3,1.0,0.15,1.0,0.8095238095238094
+taxis,JFK + LGA,all,1,Integrated depth (L2),0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,all,1,MBD / Func. boxplot,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,all,1,Isolation Forest,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,all,1,LOF,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,all,1,Robust z-score,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,disruption,1,ED (L2),0.4,1.0,0.3,1.0,0.15,1.0,0.8095238095238094
+taxis,JFK + LGA,disruption,1,ED (Spatial),0.4,1.0,0.3,1.0,0.15,1.0,0.8095238095238094
+taxis,JFK + LGA,disruption,1,Integrated depth (L2),0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,disruption,1,MBD / Func. boxplot,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,disruption,1,Isolation Forest,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,disruption,1,LOF,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+taxis,JFK + LGA,disruption,1,Robust z-score,0.6,1.0,0.3,1.0,0.15,1.0,1.0
+airports,US (all airports) [delays],all,8,ED (L2),0.2,0.125,0.2,0.25,0.15,0.25,0.12981964573373933
+airports,US (all airports) [delays],all,8,ED (Spatial),0.2,0.125,0.1,0.125,0.1,0.25,0.1500929487987421
+airports,US (all airports) [delays],all,8,Integrated depth (L2),1.0,0.25,0.6,0.25,0.45,0.25,0.5089706399342648
+airports,US (all airports) [delays],all,8,MBD / Func. boxplot,0.6,0.25,0.4,0.375,0.4,0.5,0.4209608239756601
+airports,US (all airports) [delays],all,8,Isolation Forest,1.0,0.25,0.8,0.25,0.5,0.25,0.5439263079836892
+airports,US (all airports) [delays],all,8,LOF,0.2,0.125,0.1,0.125,0.05,0.125,0.10758779610977993
+airports,US (all airports) [delays],all,8,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.059185677468695706
+airports,US (all airports) [delays],disruption,5,ED (L2),0.2,0.2,0.2,0.4,0.15,0.4,0.14412255689575607
+airports,US (all airports) [delays],disruption,5,ED (Spatial),0.2,0.2,0.1,0.2,0.1,0.4,0.1675316992926578
+airports,US (all airports) [delays],disruption,5,Integrated depth (L2),1.0,0.4,0.6,0.4,0.45,0.4,0.5976579979277085
+airports,US (all airports) [delays],disruption,5,MBD / Func. boxplot,0.4,0.2,0.3,0.4,0.35,0.6,0.3741434126765914
+airports,US (all airports) [delays],disruption,5,Isolation Forest,1.0,0.4,0.8,0.4,0.5,0.4,0.6317869422832506
+airports,US (all airports) [delays],disruption,5,LOF,0.2,0.2,0.1,0.2,0.05,0.2,0.11159492005734292
+airports,US (all airports) [delays],disruption,5,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.05593878522276271
+airports,US (all airports) [delays],artifact,2,ED (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.014987080103359173
+airports,US (all airports) [delays],artifact,2,ED (Spatial),0.0,0.0,0.0,0.0,0.0,0.0,0.023636363636363636
+airports,US (all airports) [delays],artifact,2,Integrated depth (L2),0.0,0.0,0.0,0.0,0.05,0.5,0.04372469635627531
+airports,US (all airports) [delays],artifact,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.0095967964650649
+airports,US (all airports) [delays],artifact,2,Isolation Forest,0.0,0.0,0.0,0.0,0.0,0.0,0.017261904761904763
+airports,US (all airports) [delays],artifact,2,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.01984126984126984
+airports,US (all airports) [delays],artifact,2,Robust z-score,0.0,0.0,0.1,0.5,0.05,0.5,0.06930272108843537
+airports,US (all airports) [+cancel],all,8,ED (L2),0.2,0.125,0.1,0.125,0.15,0.25,0.1449722889469957
+airports,US (all airports) [+cancel],all,8,ED (Spatial),0.2,0.125,0.2,0.25,0.15,0.375,0.18348628009321832
+airports,US (all airports) [+cancel],all,8,Integrated depth (L2),1.0,0.375,0.9,0.375,0.6,0.375,0.6797102618420321
+airports,US (all airports) [+cancel],all,8,MBD / Func. boxplot,0.8,0.375,0.6,0.375,0.55,0.5,0.5473351447310535
+airports,US (all airports) [+cancel],all,8,Isolation Forest,1.0,0.25,0.8,0.25,0.6,0.375,0.6453970282188526
+airports,US (all airports) [+cancel],all,8,LOF,0.0,0.0,0.1,0.125,0.05,0.125,0.11433250561880483
+airports,US (all airports) [+cancel],all,8,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.060245395261070755
+airports,US (all airports) [+cancel],disruption,5,ED (L2),0.2,0.2,0.1,0.2,0.15,0.4,0.16275282296463897
+airports,US (all airports) [+cancel],disruption,5,ED (Spatial),0.2,0.2,0.2,0.4,0.15,0.6,0.20907247815397706
+airports,US (all airports) [+cancel],disruption,5,Integrated depth (L2),1.0,0.6,0.9,0.6,0.6,0.6,0.8034642683423173
+airports,US (all airports) [+cancel],disruption,5,MBD / Func. boxplot,0.6,0.4,0.5,0.4,0.5,0.6,0.48574510480520705
+airports,US (all airports) [+cancel],disruption,5,Isolation Forest,1.0,0.4,0.8,0.4,0.6,0.6,0.7549265875736464
+airports,US (all airports) [+cancel],disruption,5,LOF,0.0,0.0,0.1,0.2,0.05,0.2,0.12017066287069526
+airports,US (all airports) [+cancel],disruption,5,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.05733710196127352
+airports,US (all airports) [+cancel],artifact,2,ED (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.03393665158371041
+airports,US (all airports) [+cancel],artifact,2,ED (Spatial),0.0,0.0,0.0,0.0,0.0,0.0,0.040584415584415584
+airports,US (all airports) [+cancel],artifact,2,Integrated depth (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.031108793882516507
+airports,US (all airports) [+cancel],artifact,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.008597122302158273
+airports,US (all airports) [+cancel],artifact,2,Isolation Forest,0.0,0.0,0.0,0.0,0.0,0.0,0.02022492290948667
+airports,US (all airports) [+cancel],artifact,2,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.041666666666666664
+airports,US (all airports) [+cancel],artifact,2,Robust z-score,0.0,0.0,0.1,0.5,0.05,0.5,0.06959219858156028
+airports,ORD [delays],all,1,ED (L2),0.2,1.0,0.1,1.0,0.15,1.0,0.17176470588235296
+airports,ORD [delays],all,1,ED (Spatial),0.4,1.0,0.2,1.0,0.1,1.0,0.20035267058522876
+airports,ORD [delays],all,1,Integrated depth (L2),0.4,1.0,0.3,1.0,0.25,1.0,0.5196428571428571
+airports,ORD [delays],all,1,MBD / Func. boxplot,0.2,1.0,0.3,1.0,0.2,1.0,0.3315232525758841
+airports,ORD [delays],all,1,Isolation Forest,0.4,1.0,0.4,1.0,0.25,1.0,0.6371031746031746
+airports,ORD [delays],all,1,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.05481409981409981
+airports,ORD [delays],all,1,Robust z-score,0.4,1.0,0.2,1.0,0.2,1.0,0.27402427637721755
+airports,ORD [delays],disruption,1,ED (L2),0.2,1.0,0.1,1.0,0.15,1.0,0.17176470588235296
+airports,ORD [delays],disruption,1,ED (Spatial),0.4,1.0,0.2,1.0,0.1,1.0,0.20035267058522876
+airports,ORD [delays],disruption,1,Integrated depth (L2),0.4,1.0,0.3,1.0,0.25,1.0,0.5196428571428571
+airports,ORD [delays],disruption,1,MBD / Func. boxplot,0.2,1.0,0.3,1.0,0.2,1.0,0.3315232525758841
+airports,ORD [delays],disruption,1,Isolation Forest,0.4,1.0,0.4,1.0,0.25,1.0,0.6371031746031746
+airports,ORD [delays],disruption,1,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.05481409981409981
+airports,ORD [delays],disruption,1,Robust z-score,0.4,1.0,0.2,1.0,0.2,1.0,0.27402427637721755
+airports,ORD [+cancel],all,1,ED (L2),0.2,1.0,0.1,1.0,0.15,1.0,0.15851349086643204
+airports,ORD [+cancel],all,1,ED (Spatial),0.2,1.0,0.1,1.0,0.15,1.0,0.3152619115278962
+airports,ORD [+cancel],all,1,Integrated depth (L2),0.6,1.0,0.5,1.0,0.25,1.0,0.8444444444444444
+airports,ORD [+cancel],all,1,MBD / Func. boxplot,0.4,1.0,0.3,1.0,0.2,1.0,0.35428571428571426
+airports,ORD [+cancel],all,1,Isolation Forest,0.6,1.0,0.4,1.0,0.25,1.0,0.7912087912087912
+airports,ORD [+cancel],all,1,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.04758865899001624
+airports,ORD [+cancel],all,1,Robust z-score,0.4,1.0,0.2,1.0,0.2,1.0,0.27623015873015877
+airports,ORD [+cancel],disruption,1,ED (L2),0.2,1.0,0.1,1.0,0.15,1.0,0.15851349086643204
+airports,ORD [+cancel],disruption,1,ED (Spatial),0.2,1.0,0.1,1.0,0.15,1.0,0.3152619115278962
+airports,ORD [+cancel],disruption,1,Integrated depth (L2),0.6,1.0,0.5,1.0,0.25,1.0,0.8444444444444444
+airports,ORD [+cancel],disruption,1,MBD / Func. boxplot,0.4,1.0,0.3,1.0,0.2,1.0,0.35428571428571426
+airports,ORD [+cancel],disruption,1,Isolation Forest,0.6,1.0,0.4,1.0,0.25,1.0,0.7912087912087912
+airports,ORD [+cancel],disruption,1,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.04758865899001624
+airports,ORD [+cancel],disruption,1,Robust z-score,0.4,1.0,0.2,1.0,0.2,1.0,0.27623015873015877
+airports,ATL [delays],all,2,ED (L2),0.2,0.5,0.2,1.0,0.15,1.0,0.1543579656361611
+airports,ATL [delays],all,2,ED (Spatial),0.4,0.5,0.2,0.5,0.2,1.0,0.24220951538510138
+airports,ATL [delays],all,2,Integrated depth (L2),0.8,0.5,0.5,0.5,0.25,0.5,0.5345238095238095
+airports,ATL [delays],all,2,MBD / Func. boxplot,1.0,0.5,0.5,0.5,0.25,0.5,0.7439954051796157
+airports,ATL [delays],all,2,Isolation Forest,0.8,0.5,0.5,0.5,0.3,1.0,0.5613327149041435
+airports,ATL [delays],all,2,LOF,0.2,0.5,0.1,0.5,0.05,0.5,0.09821101517530087
+airports,ATL [delays],all,2,Robust z-score,0.0,0.0,0.0,0.0,0.05,0.5,0.04425299653013096
+airports,ATL [delays],disruption,2,ED (L2),0.2,0.5,0.2,1.0,0.15,1.0,0.1543579656361611
+airports,ATL [delays],disruption,2,ED (Spatial),0.4,0.5,0.2,0.5,0.2,1.0,0.24220951538510138
+airports,ATL [delays],disruption,2,Integrated depth (L2),0.8,0.5,0.5,0.5,0.25,0.5,0.5345238095238095
+airports,ATL [delays],disruption,2,MBD / Func. boxplot,1.0,0.5,0.5,0.5,0.25,0.5,0.7439954051796157
+airports,ATL [delays],disruption,2,Isolation Forest,0.8,0.5,0.5,0.5,0.3,1.0,0.5613327149041435
+airports,ATL [delays],disruption,2,LOF,0.2,0.5,0.1,0.5,0.05,0.5,0.09821101517530087
+airports,ATL [delays],disruption,2,Robust z-score,0.0,0.0,0.0,0.0,0.05,0.5,0.04425299653013096
+airports,ATL [+cancel],all,2,ED (L2),0.4,1.0,0.2,1.0,0.2,1.0,0.4271089812443196
+airports,ATL [+cancel],all,2,ED (Spatial),0.2,0.5,0.2,1.0,0.3,1.0,0.3720434327577185
+airports,ATL [+cancel],all,2,Integrated depth (L2),0.8,0.5,0.6,1.0,0.35,1.0,0.8500927643784787
+airports,ATL [+cancel],all,2,MBD / Func. boxplot,0.8,0.5,0.5,0.5,0.25,0.5,0.7123249299719888
+airports,ATL [+cancel],all,2,Isolation Forest,0.8,0.5,0.6,1.0,0.35,1.0,0.8575353218210361
+airports,ATL [+cancel],all,2,LOF,0.0,0.0,0.1,0.5,0.1,1.0,0.12738992714602468
+airports,ATL [+cancel],all,2,Robust z-score,0.0,0.0,0.0,0.0,0.05,0.5,0.05457015388733546
+airports,ATL [+cancel],disruption,2,ED (L2),0.4,1.0,0.2,1.0,0.2,1.0,0.4271089812443196
+airports,ATL [+cancel],disruption,2,ED (Spatial),0.2,0.5,0.2,1.0,0.3,1.0,0.3720434327577185
+airports,ATL [+cancel],disruption,2,Integrated depth (L2),0.8,0.5,0.6,1.0,0.35,1.0,0.8500927643784787
+airports,ATL [+cancel],disruption,2,MBD / Func. boxplot,0.8,0.5,0.5,0.5,0.25,0.5,0.7123249299719888
+airports,ATL [+cancel],disruption,2,Isolation Forest,0.8,0.5,0.6,1.0,0.35,1.0,0.8575353218210361
+airports,ATL [+cancel],disruption,2,LOF,0.0,0.0,0.1,0.5,0.1,1.0,0.12738992714602468
+airports,ATL [+cancel],disruption,2,Robust z-score,0.0,0.0,0.0,0.0,0.05,0.5,0.05457015388733546
+airports,TPA [delays],all,2,ED (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.010192919395848918
+airports,TPA [delays],all,2,ED (Spatial),0.0,0.0,0.0,0.0,0.0,0.0,0.008989463470083323
+airports,TPA [delays],all,2,Integrated depth (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.009102445373376018
+airports,TPA [delays],all,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.06630507403394728
+airports,TPA [delays],all,2,Isolation Forest,0.0,0.0,0.0,0.0,0.0,0.0,0.010414864191749602
+airports,TPA [delays],all,2,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.01232234014724892
+airports,TPA [delays],all,2,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.007330947555708983
+airports,TPA [delays],disruption,2,ED (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.010192919395848918
+airports,TPA [delays],disruption,2,ED (Spatial),0.0,0.0,0.0,0.0,0.0,0.0,0.008989463470083323
+airports,TPA [delays],disruption,2,Integrated depth (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.009102445373376018
+airports,TPA [delays],disruption,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.06630507403394728
+airports,TPA [delays],disruption,2,Isolation Forest,0.0,0.0,0.0,0.0,0.0,0.0,0.010414864191749602
+airports,TPA [delays],disruption,2,LOF,0.0,0.0,0.0,0.0,0.0,0.0,0.01232234014724892
+airports,TPA [delays],disruption,2,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.007330947555708983
+airports,TPA [+cancel],all,2,ED (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.0499264272305803
+airports,TPA [+cancel],all,2,ED (Spatial),0.0,0.0,0.0,0.0,0.0,0.0,0.0421119615971836
+airports,TPA [+cancel],all,2,Integrated depth (L2),0.6,1.0,0.3,1.0,0.2,1.0,0.8125
+airports,TPA [+cancel],all,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.07056394692264258
+airports,TPA [+cancel],all,2,Isolation Forest,0.6,1.0,0.3,1.0,0.2,1.0,0.550595238095238
+airports,TPA [+cancel],all,2,LOF,0.0,0.0,0.0,0.0,0.05,0.5,0.09834783272283272
+airports,TPA [+cancel],all,2,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.012368924907266567
+airports,TPA [+cancel],disruption,2,ED (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.0499264272305803
+airports,TPA [+cancel],disruption,2,ED (Spatial),0.0,0.0,0.0,0.0,0.0,0.0,0.0421119615971836
+airports,TPA [+cancel],disruption,2,Integrated depth (L2),0.6,1.0,0.3,1.0,0.2,1.0,0.8125
+airports,TPA [+cancel],disruption,2,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.07056394692264258
+airports,TPA [+cancel],disruption,2,Isolation Forest,0.6,1.0,0.3,1.0,0.2,1.0,0.550595238095238
+airports,TPA [+cancel],disruption,2,LOF,0.0,0.0,0.0,0.0,0.05,0.5,0.09834783272283272
+airports,TPA [+cancel],disruption,2,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.012368924907266567
+airports,IAH + HOU [delays],all,1,ED (L2),0.0,0.0,0.1,1.0,0.05,1.0,0.16666666666666666
+airports,IAH + HOU [delays],all,1,ED (Spatial),0.0,0.0,0.1,1.0,0.05,1.0,0.1111111111111111
+airports,IAH + HOU [delays],all,1,Integrated depth (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.00909090909090909
+airports,IAH + HOU [delays],all,1,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.023809523809523808
+airports,IAH + HOU [delays],all,1,Isolation Forest,0.0,0.0,0.0,0.0,0.0,0.0,0.03125
+airports,IAH + HOU [delays],all,1,LOF,0.2,1.0,0.1,1.0,0.05,1.0,0.25
+airports,IAH + HOU [delays],all,1,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.04
+airports,IAH + HOU [delays],disruption,1,ED (L2),0.0,0.0,0.1,1.0,0.05,1.0,0.16666666666666666
+airports,IAH + HOU [delays],disruption,1,ED (Spatial),0.0,0.0,0.1,1.0,0.05,1.0,0.1111111111111111
+airports,IAH + HOU [delays],disruption,1,Integrated depth (L2),0.0,0.0,0.0,0.0,0.0,0.0,0.00909090909090909
+airports,IAH + HOU [delays],disruption,1,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.023809523809523808
+airports,IAH + HOU [delays],disruption,1,Isolation Forest,0.0,0.0,0.0,0.0,0.0,0.0,0.03125
+airports,IAH + HOU [delays],disruption,1,LOF,0.2,1.0,0.1,1.0,0.05,1.0,0.25
+airports,IAH + HOU [delays],disruption,1,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.04
+airports,IAH + HOU [+cancel],all,1,ED (L2),0.2,1.0,0.1,1.0,0.05,1.0,0.3333333333333333
+airports,IAH + HOU [+cancel],all,1,ED (Spatial),0.2,1.0,0.1,1.0,0.05,1.0,1.0
+airports,IAH + HOU [+cancel],all,1,Integrated depth (L2),0.2,1.0,0.1,1.0,0.05,1.0,1.0
+airports,IAH + HOU [+cancel],all,1,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.03225806451612903
+airports,IAH + HOU [+cancel],all,1,Isolation Forest,0.2,1.0,0.1,1.0,0.05,1.0,1.0
+airports,IAH + HOU [+cancel],all,1,LOF,0.2,1.0,0.1,1.0,0.05,1.0,0.3333333333333333
+airports,IAH + HOU [+cancel],all,1,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.043478260869565216
+airports,IAH + HOU [+cancel],disruption,1,ED (L2),0.2,1.0,0.1,1.0,0.05,1.0,0.3333333333333333
+airports,IAH + HOU [+cancel],disruption,1,ED (Spatial),0.2,1.0,0.1,1.0,0.05,1.0,1.0
+airports,IAH + HOU [+cancel],disruption,1,Integrated depth (L2),0.2,1.0,0.1,1.0,0.05,1.0,1.0
+airports,IAH + HOU [+cancel],disruption,1,MBD / Func. boxplot,0.0,0.0,0.0,0.0,0.0,0.0,0.03225806451612903
+airports,IAH + HOU [+cancel],disruption,1,Isolation Forest,0.2,1.0,0.1,1.0,0.05,1.0,1.0
+airports,IAH + HOU [+cancel],disruption,1,LOF,0.2,1.0,0.1,1.0,0.05,1.0,0.3333333333333333
+airports,IAH + HOU [+cancel],disruption,1,Robust z-score,0.0,0.0,0.0,0.0,0.0,0.0,0.043478260869565216

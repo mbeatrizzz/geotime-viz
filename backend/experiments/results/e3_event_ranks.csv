@@ -1,0 +1,512 @@
+dataset,scenario,events,event,method,best_rank
+taxis,NYC (all zones),all,Hurricane Sandy,ED (L2),2
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),ED (L2),7
+taxis,NYC (all zones),all,Nor'easter Athena,ED (L2),19
+taxis,NYC (all zones),all,First snowfall of winter,ED (L2),4
+taxis,NYC (all zones),all,New Year's Day,ED (L2),8
+taxis,NYC (all zones),all,Memorial Day,ED (L2),28
+taxis,NYC (all zones),all,Independence Day,ED (L2),64
+taxis,NYC (all zones),all,Labor Day,ED (L2),15
+taxis,NYC (all zones),all,Thanksgiving,ED (L2),22
+taxis,NYC (all zones),all,Christmas Eve/Day,ED (L2),13
+taxis,NYC (all zones),all,New Year's Eve,ED (L2),76
+taxis,NYC (all zones),all,Hurricane Sandy,ED (Spatial),2
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),ED (Spatial),9
+taxis,NYC (all zones),all,Nor'easter Athena,ED (Spatial),18
+taxis,NYC (all zones),all,First snowfall of winter,ED (Spatial),3
+taxis,NYC (all zones),all,New Year's Day,ED (Spatial),8
+taxis,NYC (all zones),all,Memorial Day,ED (Spatial),27
+taxis,NYC (all zones),all,Independence Day,ED (Spatial),78
+taxis,NYC (all zones),all,Labor Day,ED (Spatial),14
+taxis,NYC (all zones),all,Thanksgiving,ED (Spatial),30
+taxis,NYC (all zones),all,Christmas Eve/Day,ED (Spatial),15
+taxis,NYC (all zones),all,New Year's Eve,ED (Spatial),73
+taxis,NYC (all zones),all,Hurricane Sandy,Integrated depth (L2),1
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),Integrated depth (L2),7
+taxis,NYC (all zones),all,Nor'easter Athena,Integrated depth (L2),22
+taxis,NYC (all zones),all,First snowfall of winter,Integrated depth (L2),10
+taxis,NYC (all zones),all,New Year's Day,Integrated depth (L2),4
+taxis,NYC (all zones),all,Memorial Day,Integrated depth (L2),19
+taxis,NYC (all zones),all,Independence Day,Integrated depth (L2),50
+taxis,NYC (all zones),all,Labor Day,Integrated depth (L2),9
+taxis,NYC (all zones),all,Thanksgiving,Integrated depth (L2),15
+taxis,NYC (all zones),all,Christmas Eve/Day,Integrated depth (L2),6
+taxis,NYC (all zones),all,New Year's Eve,Integrated depth (L2),27
+taxis,NYC (all zones),all,Hurricane Sandy,MBD / Func. boxplot,1
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),MBD / Func. boxplot,13
+taxis,NYC (all zones),all,Nor'easter Athena,MBD / Func. boxplot,174
+taxis,NYC (all zones),all,First snowfall of winter,MBD / Func. boxplot,8
+taxis,NYC (all zones),all,New Year's Day,MBD / Func. boxplot,7
+taxis,NYC (all zones),all,Memorial Day,MBD / Func. boxplot,20
+taxis,NYC (all zones),all,Independence Day,MBD / Func. boxplot,12
+taxis,NYC (all zones),all,Labor Day,MBD / Func. boxplot,25
+taxis,NYC (all zones),all,Thanksgiving,MBD / Func. boxplot,28
+taxis,NYC (all zones),all,Christmas Eve/Day,MBD / Func. boxplot,2
+taxis,NYC (all zones),all,New Year's Eve,MBD / Func. boxplot,144
+taxis,NYC (all zones),all,Hurricane Sandy,Isolation Forest,1
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),Isolation Forest,7
+taxis,NYC (all zones),all,Nor'easter Athena,Isolation Forest,31
+taxis,NYC (all zones),all,First snowfall of winter,Isolation Forest,13
+taxis,NYC (all zones),all,New Year's Day,Isolation Forest,6
+taxis,NYC (all zones),all,Memorial Day,Isolation Forest,11
+taxis,NYC (all zones),all,Independence Day,Isolation Forest,19
+taxis,NYC (all zones),all,Labor Day,Isolation Forest,8
+taxis,NYC (all zones),all,Thanksgiving,Isolation Forest,16
+taxis,NYC (all zones),all,Christmas Eve/Day,Isolation Forest,4
+taxis,NYC (all zones),all,New Year's Eve,Isolation Forest,71
+taxis,NYC (all zones),all,Hurricane Sandy,LOF,1
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),LOF,8
+taxis,NYC (all zones),all,Nor'easter Athena,LOF,6
+taxis,NYC (all zones),all,First snowfall of winter,LOF,16
+taxis,NYC (all zones),all,New Year's Day,LOF,5
+taxis,NYC (all zones),all,Memorial Day,LOF,29
+taxis,NYC (all zones),all,Independence Day,LOF,59
+taxis,NYC (all zones),all,Labor Day,LOF,18
+taxis,NYC (all zones),all,Thanksgiving,LOF,19
+taxis,NYC (all zones),all,Christmas Eve/Day,LOF,11
+taxis,NYC (all zones),all,New Year's Eve,LOF,26
+taxis,NYC (all zones),all,Hurricane Sandy,Robust z-score,1
+taxis,NYC (all zones),all,Post-Sandy recovery (fuel/transit),Robust z-score,8
+taxis,NYC (all zones),all,Nor'easter Athena,Robust z-score,143
+taxis,NYC (all zones),all,First snowfall of winter,Robust z-score,32
+taxis,NYC (all zones),all,New Year's Day,Robust z-score,6
+taxis,NYC (all zones),all,Memorial Day,Robust z-score,20
+taxis,NYC (all zones),all,Independence Day,Robust z-score,45
+taxis,NYC (all zones),all,Labor Day,Robust z-score,11
+taxis,NYC (all zones),all,Thanksgiving,Robust z-score,17
+taxis,NYC (all zones),all,Christmas Eve/Day,Robust z-score,3
+taxis,NYC (all zones),all,New Year's Eve,Robust z-score,128
+taxis,NYC (all zones),disruption,Hurricane Sandy,ED (L2),2
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),ED (L2),7
+taxis,NYC (all zones),disruption,Nor'easter Athena,ED (L2),19
+taxis,NYC (all zones),disruption,First snowfall of winter,ED (L2),4
+taxis,NYC (all zones),disruption,Hurricane Sandy,ED (Spatial),2
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),ED (Spatial),9
+taxis,NYC (all zones),disruption,Nor'easter Athena,ED (Spatial),18
+taxis,NYC (all zones),disruption,First snowfall of winter,ED (Spatial),3
+taxis,NYC (all zones),disruption,Hurricane Sandy,Integrated depth (L2),1
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),Integrated depth (L2),7
+taxis,NYC (all zones),disruption,Nor'easter Athena,Integrated depth (L2),22
+taxis,NYC (all zones),disruption,First snowfall of winter,Integrated depth (L2),10
+taxis,NYC (all zones),disruption,Hurricane Sandy,MBD / Func. boxplot,1
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),MBD / Func. boxplot,13
+taxis,NYC (all zones),disruption,Nor'easter Athena,MBD / Func. boxplot,174
+taxis,NYC (all zones),disruption,First snowfall of winter,MBD / Func. boxplot,8
+taxis,NYC (all zones),disruption,Hurricane Sandy,Isolation Forest,1
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),Isolation Forest,7
+taxis,NYC (all zones),disruption,Nor'easter Athena,Isolation Forest,31
+taxis,NYC (all zones),disruption,First snowfall of winter,Isolation Forest,13
+taxis,NYC (all zones),disruption,Hurricane Sandy,LOF,1
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),LOF,8
+taxis,NYC (all zones),disruption,Nor'easter Athena,LOF,6
+taxis,NYC (all zones),disruption,First snowfall of winter,LOF,16
+taxis,NYC (all zones),disruption,Hurricane Sandy,Robust z-score,1
+taxis,NYC (all zones),disruption,Post-Sandy recovery (fuel/transit),Robust z-score,8
+taxis,NYC (all zones),disruption,Nor'easter Athena,Robust z-score,143
+taxis,NYC (all zones),disruption,First snowfall of winter,Robust z-score,32
+taxis,NYC (all zones),artifact,DST start,ED (L2),1
+taxis,NYC (all zones),artifact,DST end,ED (L2),16
+taxis,NYC (all zones),artifact,DST start,ED (Spatial),1
+taxis,NYC (all zones),artifact,DST end,ED (Spatial),16
+taxis,NYC (all zones),artifact,DST start,Integrated depth (L2),24
+taxis,NYC (all zones),artifact,DST end,Integrated depth (L2),17
+taxis,NYC (all zones),artifact,DST start,MBD / Func. boxplot,44
+taxis,NYC (all zones),artifact,DST end,MBD / Func. boxplot,41
+taxis,NYC (all zones),artifact,DST start,Isolation Forest,15
+taxis,NYC (all zones),artifact,DST end,Isolation Forest,29
+taxis,NYC (all zones),artifact,DST start,LOF,2
+taxis,NYC (all zones),artifact,DST end,LOF,53
+taxis,NYC (all zones),artifact,DST start,Robust z-score,4
+taxis,NYC (all zones),artifact,DST end,Robust z-score,37
+taxis,JFK + LGA,all,Hurricane Sandy,ED (L2),1
+taxis,JFK + LGA,all,Hurricane Sandy,ED (Spatial),1
+taxis,JFK + LGA,all,Hurricane Sandy,Integrated depth (L2),1
+taxis,JFK + LGA,all,Hurricane Sandy,MBD / Func. boxplot,1
+taxis,JFK + LGA,all,Hurricane Sandy,Isolation Forest,1
+taxis,JFK + LGA,all,Hurricane Sandy,LOF,1
+taxis,JFK + LGA,all,Hurricane Sandy,Robust z-score,1
+taxis,JFK + LGA,disruption,Hurricane Sandy,ED (L2),1
+taxis,JFK + LGA,disruption,Hurricane Sandy,ED (Spatial),1
+taxis,JFK + LGA,disruption,Hurricane Sandy,Integrated depth (L2),1
+taxis,JFK + LGA,disruption,Hurricane Sandy,MBD / Func. boxplot,1
+taxis,JFK + LGA,disruption,Hurricane Sandy,Isolation Forest,1
+taxis,JFK + LGA,disruption,Hurricane Sandy,LOF,1
+taxis,JFK + LGA,disruption,Hurricane Sandy,Robust z-score,1
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,ED (L2),10
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),ED (L2),156
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,ED (L2),3
+airports,US (all airports) [delays],all,Hurricane Helene,ED (L2),105
+airports,US (all airports) [delays],all,Hurricane Milton,ED (L2),191
+airports,US (all airports) [delays],all,Independence Day,ED (L2),358
+airports,US (all airports) [delays],all,Thanksgiving,ED (L2),245
+airports,US (all airports) [delays],all,Christmas,ED (L2),277
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,ED (Spatial),15
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),ED (Spatial),173
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,ED (Spatial),1
+airports,US (all airports) [delays],all,Hurricane Helene,ED (Spatial),117
+airports,US (all airports) [delays],all,Hurricane Milton,ED (Spatial),210
+airports,US (all airports) [delays],all,Independence Day,ED (Spatial),362
+airports,US (all airports) [delays],all,Thanksgiving,ED (Spatial),284
+airports,US (all airports) [delays],all,Christmas,ED (Spatial),195
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,Integrated depth (L2),2
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),Integrated depth (L2),65
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,Integrated depth (L2),1
+airports,US (all airports) [delays],all,Hurricane Helene,Integrated depth (L2),46
+airports,US (all airports) [delays],all,Hurricane Milton,Integrated depth (L2),123
+airports,US (all airports) [delays],all,Independence Day,Integrated depth (L2),338
+airports,US (all airports) [delays],all,Thanksgiving,Integrated depth (L2),244
+airports,US (all airports) [delays],all,Christmas,Integrated depth (L2),203
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,MBD / Func. boxplot,1
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),MBD / Func. boxplot,99
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,8
+airports,US (all airports) [delays],all,Hurricane Helene,MBD / Func. boxplot,189
+airports,US (all airports) [delays],all,Hurricane Milton,MBD / Func. boxplot,20
+airports,US (all airports) [delays],all,Independence Day,MBD / Func. boxplot,32
+airports,US (all airports) [delays],all,Thanksgiving,MBD / Func. boxplot,5
+airports,US (all airports) [delays],all,Christmas,MBD / Func. boxplot,43
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,Isolation Forest,2
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),Isolation Forest,56
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,Isolation Forest,1
+airports,US (all airports) [delays],all,Hurricane Helene,Isolation Forest,46
+airports,US (all airports) [delays],all,Hurricane Milton,Isolation Forest,106
+airports,US (all airports) [delays],all,Independence Day,Isolation Forest,289
+airports,US (all airports) [delays],all,Thanksgiving,Isolation Forest,108
+airports,US (all airports) [delays],all,Christmas,Isolation Forest,140
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,LOF,22
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),LOF,161
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,LOF,4
+airports,US (all airports) [delays],all,Hurricane Helene,LOF,79
+airports,US (all airports) [delays],all,Hurricane Milton,LOF,160
+airports,US (all airports) [delays],all,Independence Day,LOF,355
+airports,US (all airports) [delays],all,Thanksgiving,LOF,181
+airports,US (all airports) [delays],all,Christmas,LOF,123
+airports,US (all airports) [delays],all,Midwest winter storms / Chicago snow,Robust z-score,61
+airports,US (all airports) [delays],all,Hurricane Beryl (Houston),Robust z-score,97
+airports,US (all airports) [delays],all,CrowdStrike outage / Delta meltdown,Robust z-score,32
+airports,US (all airports) [delays],all,Hurricane Helene,Robust z-score,106
+airports,US (all airports) [delays],all,Hurricane Milton,Robust z-score,215
+airports,US (all airports) [delays],all,Independence Day,Robust z-score,351
+airports,US (all airports) [delays],all,Thanksgiving,Robust z-score,278
+airports,US (all airports) [delays],all,Christmas,Robust z-score,115
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,ED (L2),10
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),ED (L2),156
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,ED (L2),3
+airports,US (all airports) [delays],disruption,Hurricane Helene,ED (L2),105
+airports,US (all airports) [delays],disruption,Hurricane Milton,ED (L2),191
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,ED (Spatial),15
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),ED (Spatial),173
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,ED (Spatial),1
+airports,US (all airports) [delays],disruption,Hurricane Helene,ED (Spatial),117
+airports,US (all airports) [delays],disruption,Hurricane Milton,ED (Spatial),210
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,Integrated depth (L2),2
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),Integrated depth (L2),65
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,Integrated depth (L2),1
+airports,US (all airports) [delays],disruption,Hurricane Helene,Integrated depth (L2),46
+airports,US (all airports) [delays],disruption,Hurricane Milton,Integrated depth (L2),123
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,MBD / Func. boxplot,1
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),MBD / Func. boxplot,99
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,8
+airports,US (all airports) [delays],disruption,Hurricane Helene,MBD / Func. boxplot,189
+airports,US (all airports) [delays],disruption,Hurricane Milton,MBD / Func. boxplot,20
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,Isolation Forest,2
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),Isolation Forest,56
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,Isolation Forest,1
+airports,US (all airports) [delays],disruption,Hurricane Helene,Isolation Forest,46
+airports,US (all airports) [delays],disruption,Hurricane Milton,Isolation Forest,106
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,LOF,22
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),LOF,161
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,LOF,4
+airports,US (all airports) [delays],disruption,Hurricane Helene,LOF,79
+airports,US (all airports) [delays],disruption,Hurricane Milton,LOF,160
+airports,US (all airports) [delays],disruption,Midwest winter storms / Chicago snow,Robust z-score,61
+airports,US (all airports) [delays],disruption,Hurricane Beryl (Houston),Robust z-score,97
+airports,US (all airports) [delays],disruption,CrowdStrike outage / Delta meltdown,Robust z-score,32
+airports,US (all airports) [delays],disruption,Hurricane Helene,Robust z-score,106
+airports,US (all airports) [delays],disruption,Hurricane Milton,Robust z-score,215
+airports,US (all airports) [delays],artifact,DST start,ED (L2),45
+airports,US (all airports) [delays],artifact,DST end,ED (L2),258
+airports,US (all airports) [delays],artifact,DST start,ED (Spatial),25
+airports,US (all airports) [delays],artifact,DST end,ED (Spatial),275
+airports,US (all airports) [delays],artifact,DST start,Integrated depth (L2),13
+airports,US (all airports) [delays],artifact,DST end,Integrated depth (L2),190
+airports,US (all airports) [delays],artifact,DST start,MBD / Func. boxplot,102
+airports,US (all airports) [delays],artifact,DST end,MBD / Func. boxplot,213
+airports,US (all airports) [delays],artifact,DST start,Isolation Forest,40
+airports,US (all airports) [delays],artifact,DST end,Isolation Forest,210
+airports,US (all airports) [delays],artifact,DST start,LOF,42
+airports,US (all airports) [delays],artifact,DST end,LOF,126
+airports,US (all airports) [delays],artifact,DST start,Robust z-score,8
+airports,US (all airports) [delays],artifact,DST end,Robust z-score,147
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,ED (L2),13
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),ED (L2),126
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,ED (L2),3
+airports,US (all airports) [+cancel],all,Hurricane Helene,ED (L2),94
+airports,US (all airports) [+cancel],all,Hurricane Milton,ED (L2),32
+airports,US (all airports) [+cancel],all,Independence Day,ED (L2),356
+airports,US (all airports) [+cancel],all,Thanksgiving,ED (L2),272
+airports,US (all airports) [+cancel],all,Christmas,ED (L2),289
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,ED (Spatial),9
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),ED (Spatial),146
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,ED (Spatial),1
+airports,US (all airports) [+cancel],all,Hurricane Helene,ED (Spatial),101
+airports,US (all airports) [+cancel],all,Hurricane Milton,ED (Spatial),14
+airports,US (all airports) [+cancel],all,Independence Day,ED (Spatial),362
+airports,US (all airports) [+cancel],all,Thanksgiving,ED (Spatial),303
+airports,US (all airports) [+cancel],all,Christmas,ED (Spatial),263
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,Integrated depth (L2),2
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),Integrated depth (L2),30
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,Integrated depth (L2),1
+airports,US (all airports) [+cancel],all,Hurricane Helene,Integrated depth (L2),41
+airports,US (all airports) [+cancel],all,Hurricane Milton,Integrated depth (L2),5
+airports,US (all airports) [+cancel],all,Independence Day,Integrated depth (L2),348
+airports,US (all airports) [+cancel],all,Thanksgiving,Integrated depth (L2),265
+airports,US (all airports) [+cancel],all,Christmas,Integrated depth (L2),239
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,MBD / Func. boxplot,1
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),MBD / Func. boxplot,66
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,5
+airports,US (all airports) [+cancel],all,Hurricane Helene,MBD / Func. boxplot,144
+airports,US (all airports) [+cancel],all,Hurricane Milton,MBD / Func. boxplot,15
+airports,US (all airports) [+cancel],all,Independence Day,MBD / Func. boxplot,37
+airports,US (all airports) [+cancel],all,Thanksgiving,MBD / Func. boxplot,3
+airports,US (all airports) [+cancel],all,Christmas,MBD / Func. boxplot,53
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,Isolation Forest,2
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),Isolation Forest,33
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,Isolation Forest,1
+airports,US (all airports) [+cancel],all,Hurricane Helene,Isolation Forest,39
+airports,US (all airports) [+cancel],all,Hurricane Milton,Isolation Forest,18
+airports,US (all airports) [+cancel],all,Independence Day,Isolation Forest,276
+airports,US (all airports) [+cancel],all,Thanksgiving,Isolation Forest,128
+airports,US (all airports) [+cancel],all,Christmas,Isolation Forest,165
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,LOF,33
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),LOF,133
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,LOF,6
+airports,US (all airports) [+cancel],all,Hurricane Helene,LOF,39
+airports,US (all airports) [+cancel],all,Hurricane Milton,LOF,23
+airports,US (all airports) [+cancel],all,Independence Day,LOF,352
+airports,US (all airports) [+cancel],all,Thanksgiving,LOF,223
+airports,US (all airports) [+cancel],all,Christmas,LOF,124
+airports,US (all airports) [+cancel],all,Midwest winter storms / Chicago snow,Robust z-score,61
+airports,US (all airports) [+cancel],all,Hurricane Beryl (Houston),Robust z-score,96
+airports,US (all airports) [+cancel],all,CrowdStrike outage / Delta meltdown,Robust z-score,32
+airports,US (all airports) [+cancel],all,Hurricane Helene,Robust z-score,108
+airports,US (all airports) [+cancel],all,Hurricane Milton,Robust z-score,192
+airports,US (all airports) [+cancel],all,Independence Day,Robust z-score,356
+airports,US (all airports) [+cancel],all,Thanksgiving,Robust z-score,291
+airports,US (all airports) [+cancel],all,Christmas,Robust z-score,115
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,ED (L2),13
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),ED (L2),126
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,ED (L2),3
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,ED (L2),94
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,ED (L2),32
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,ED (Spatial),9
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),ED (Spatial),146
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,ED (Spatial),1
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,ED (Spatial),101
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,ED (Spatial),14
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,Integrated depth (L2),2
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),Integrated depth (L2),30
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,Integrated depth (L2),1
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,Integrated depth (L2),41
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,Integrated depth (L2),5
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,MBD / Func. boxplot,1
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),MBD / Func. boxplot,66
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,5
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,MBD / Func. boxplot,144
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,MBD / Func. boxplot,15
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,Isolation Forest,2
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),Isolation Forest,33
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,Isolation Forest,1
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,Isolation Forest,39
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,Isolation Forest,18
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,LOF,33
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),LOF,133
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,LOF,6
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,LOF,39
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,LOF,23
+airports,US (all airports) [+cancel],disruption,Midwest winter storms / Chicago snow,Robust z-score,61
+airports,US (all airports) [+cancel],disruption,Hurricane Beryl (Houston),Robust z-score,96
+airports,US (all airports) [+cancel],disruption,CrowdStrike outage / Delta meltdown,Robust z-score,32
+airports,US (all airports) [+cancel],disruption,Hurricane Helene,Robust z-score,108
+airports,US (all airports) [+cancel],disruption,Hurricane Milton,Robust z-score,192
+airports,US (all airports) [+cancel],artifact,DST start,ED (L2),34
+airports,US (all airports) [+cancel],artifact,DST end,ED (L2),52
+airports,US (all airports) [+cancel],artifact,DST start,ED (Spatial),44
+airports,US (all airports) [+cancel],artifact,DST end,ED (Spatial),28
+airports,US (all airports) [+cancel],artifact,DST start,Integrated depth (L2),21
+airports,US (all airports) [+cancel],artifact,DST end,Integrated depth (L2),137
+airports,US (all airports) [+cancel],artifact,DST start,MBD / Func. boxplot,139
+airports,US (all airports) [+cancel],artifact,DST end,MBD / Func. boxplot,200
+airports,US (all airports) [+cancel],artifact,DST start,Isolation Forest,37
+airports,US (all airports) [+cancel],artifact,DST end,Isolation Forest,149
+airports,US (all airports) [+cancel],artifact,DST start,LOF,48
+airports,US (all airports) [+cancel],artifact,DST end,LOF,24
+airports,US (all airports) [+cancel],artifact,DST start,Robust z-score,8
+airports,US (all airports) [+cancel],artifact,DST end,Robust z-score,141
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,ED (L2),3
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,ED (Spatial),3
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,Integrated depth (L2),1
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,MBD / Func. boxplot,2
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,Isolation Forest,1
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,LOF,27
+airports,ORD [delays],all,Midwest winter storms / Chicago snow,Robust z-score,3
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,ED (L2),3
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,ED (Spatial),3
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,Integrated depth (L2),1
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,MBD / Func. boxplot,2
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,Isolation Forest,1
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,LOF,27
+airports,ORD [delays],disruption,Midwest winter storms / Chicago snow,Robust z-score,3
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,ED (L2),4
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,ED (Spatial),1
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,Integrated depth (L2),1
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,MBD / Func. boxplot,2
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,Isolation Forest,1
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,LOF,26
+airports,ORD [+cancel],all,Midwest winter storms / Chicago snow,Robust z-score,3
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,ED (L2),4
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,ED (Spatial),1
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,Integrated depth (L2),1
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,MBD / Func. boxplot,2
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,Isolation Forest,1
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,LOF,26
+airports,ORD [+cancel],disruption,Midwest winter storms / Chicago snow,Robust z-score,3
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,ED (L2),9
+airports,ATL [delays],all,Hurricane Helene,ED (L2),5
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,ED (Spatial),3
+airports,ATL [delays],all,Hurricane Helene,ED (Spatial),14
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,Integrated depth (L2),2
+airports,ATL [delays],all,Hurricane Helene,Integrated depth (L2),22
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,1
+airports,ATL [delays],all,Hurricane Helene,MBD / Func. boxplot,32
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,Isolation Forest,2
+airports,ATL [delays],all,Hurricane Helene,Isolation Forest,14
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,LOF,26
+airports,ATL [delays],all,Hurricane Helene,LOF,5
+airports,ATL [delays],all,CrowdStrike outage / Delta meltdown,Robust z-score,94
+airports,ATL [delays],all,Hurricane Helene,Robust z-score,14
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,ED (L2),9
+airports,ATL [delays],disruption,Hurricane Helene,ED (L2),5
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,ED (Spatial),3
+airports,ATL [delays],disruption,Hurricane Helene,ED (Spatial),14
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,Integrated depth (L2),2
+airports,ATL [delays],disruption,Hurricane Helene,Integrated depth (L2),22
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,1
+airports,ATL [delays],disruption,Hurricane Helene,MBD / Func. boxplot,32
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,Isolation Forest,2
+airports,ATL [delays],disruption,Hurricane Helene,Isolation Forest,14
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,LOF,26
+airports,ATL [delays],disruption,Hurricane Helene,LOF,5
+airports,ATL [delays],disruption,CrowdStrike outage / Delta meltdown,Robust z-score,94
+airports,ATL [delays],disruption,Hurricane Helene,Robust z-score,14
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,ED (L2),2
+airports,ATL [+cancel],all,Hurricane Helene,ED (L2),1
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,ED (Spatial),1
+airports,ATL [+cancel],all,Hurricane Helene,ED (Spatial),10
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,Integrated depth (L2),1
+airports,ATL [+cancel],all,Hurricane Helene,Integrated depth (L2),10
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,1
+airports,ATL [+cancel],all,Hurricane Helene,MBD / Func. boxplot,45
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,Isolation Forest,1
+airports,ATL [+cancel],all,Hurricane Helene,Isolation Forest,8
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,LOF,15
+airports,ATL [+cancel],all,Hurricane Helene,LOF,8
+airports,ATL [+cancel],all,CrowdStrike outage / Delta meltdown,Robust z-score,64
+airports,ATL [+cancel],all,Hurricane Helene,Robust z-score,14
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,ED (L2),2
+airports,ATL [+cancel],disruption,Hurricane Helene,ED (L2),1
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,ED (Spatial),1
+airports,ATL [+cancel],disruption,Hurricane Helene,ED (Spatial),10
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,Integrated depth (L2),1
+airports,ATL [+cancel],disruption,Hurricane Helene,Integrated depth (L2),10
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,MBD / Func. boxplot,1
+airports,ATL [+cancel],disruption,Hurricane Helene,MBD / Func. boxplot,45
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,Isolation Forest,1
+airports,ATL [+cancel],disruption,Hurricane Helene,Isolation Forest,8
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,LOF,15
+airports,ATL [+cancel],disruption,Hurricane Helene,LOF,8
+airports,ATL [+cancel],disruption,CrowdStrike outage / Delta meltdown,Robust z-score,64
+airports,ATL [+cancel],disruption,Hurricane Helene,Robust z-score,14
+airports,TPA [delays],all,Hurricane Helene,ED (L2),62
+airports,TPA [delays],all,Hurricane Milton,ED (L2),365
+airports,TPA [delays],all,Hurricane Helene,ED (Spatial),90
+airports,TPA [delays],all,Hurricane Milton,ED (Spatial),362
+airports,TPA [delays],all,Hurricane Helene,Integrated depth (L2),87
+airports,TPA [delays],all,Hurricane Milton,Integrated depth (L2),361
+airports,TPA [delays],all,Hurricane Helene,MBD / Func. boxplot,24
+airports,TPA [delays],all,Hurricane Milton,MBD / Func. boxplot,25
+airports,TPA [delays],all,Hurricane Helene,Isolation Forest,59
+airports,TPA [delays],all,Hurricane Milton,Isolation Forest,364
+airports,TPA [delays],all,Hurricane Helene,LOF,42
+airports,TPA [delays],all,Hurricane Milton,LOF,353
+airports,TPA [delays],all,Hurricane Helene,Robust z-score,220
+airports,TPA [delays],all,Hurricane Milton,Robust z-score,363
+airports,TPA [delays],disruption,Hurricane Helene,ED (L2),62
+airports,TPA [delays],disruption,Hurricane Milton,ED (L2),365
+airports,TPA [delays],disruption,Hurricane Helene,ED (Spatial),90
+airports,TPA [delays],disruption,Hurricane Milton,ED (Spatial),362
+airports,TPA [delays],disruption,Hurricane Helene,Integrated depth (L2),87
+airports,TPA [delays],disruption,Hurricane Milton,Integrated depth (L2),361
+airports,TPA [delays],disruption,Hurricane Helene,MBD / Func. boxplot,24
+airports,TPA [delays],disruption,Hurricane Milton,MBD / Func. boxplot,25
+airports,TPA [delays],disruption,Hurricane Helene,Isolation Forest,59
+airports,TPA [delays],disruption,Hurricane Milton,Isolation Forest,364
+airports,TPA [delays],disruption,Hurricane Helene,LOF,42
+airports,TPA [delays],disruption,Hurricane Milton,LOF,353
+airports,TPA [delays],disruption,Hurricane Helene,Robust z-score,220
+airports,TPA [delays],disruption,Hurricane Milton,Robust z-score,363
+airports,TPA [+cancel],all,Hurricane Helene,ED (L2),45
+airports,TPA [+cancel],all,Hurricane Milton,ED (L2),46
+airports,TPA [+cancel],all,Hurricane Helene,ED (Spatial),57
+airports,TPA [+cancel],all,Hurricane Milton,ED (Spatial),58
+airports,TPA [+cancel],all,Hurricane Helene,Integrated depth (L2),1
+airports,TPA [+cancel],all,Hurricane Milton,Integrated depth (L2),2
+airports,TPA [+cancel],all,Hurricane Helene,MBD / Func. boxplot,22
+airports,TPA [+cancel],all,Hurricane Milton,MBD / Func. boxplot,23
+airports,TPA [+cancel],all,Hurricane Helene,Isolation Forest,2
+airports,TPA [+cancel],all,Hurricane Milton,Isolation Forest,3
+airports,TPA [+cancel],all,Hurricane Helene,LOF,16
+airports,TPA [+cancel],all,Hurricane Milton,LOF,27
+airports,TPA [+cancel],all,Hurricane Helene,Robust z-score,185
+airports,TPA [+cancel],all,Hurricane Milton,Robust z-score,204
+airports,TPA [+cancel],disruption,Hurricane Helene,ED (L2),45
+airports,TPA [+cancel],disruption,Hurricane Milton,ED (L2),46
+airports,TPA [+cancel],disruption,Hurricane Helene,ED (Spatial),57
+airports,TPA [+cancel],disruption,Hurricane Milton,ED (Spatial),58
+airports,TPA [+cancel],disruption,Hurricane Helene,Integrated depth (L2),1
+airports,TPA [+cancel],disruption,Hurricane Milton,Integrated depth (L2),2
+airports,TPA [+cancel],disruption,Hurricane Helene,MBD / Func. boxplot,22
+airports,TPA [+cancel],disruption,Hurricane Milton,MBD / Func. boxplot,23
+airports,TPA [+cancel],disruption,Hurricane Helene,Isolation Forest,2
+airports,TPA [+cancel],disruption,Hurricane Milton,Isolation Forest,3
+airports,TPA [+cancel],disruption,Hurricane Helene,LOF,16
+airports,TPA [+cancel],disruption,Hurricane Milton,LOF,27
+airports,TPA [+cancel],disruption,Hurricane Helene,Robust z-score,185
+airports,TPA [+cancel],disruption,Hurricane Milton,Robust z-score,204
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),ED (L2),6
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),ED (Spatial),9
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),Integrated depth (L2),110
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),MBD / Func. boxplot,42
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),Isolation Forest,32
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),LOF,4
+airports,IAH + HOU [delays],all,Hurricane Beryl (Houston),Robust z-score,25
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),ED (L2),6
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),ED (Spatial),9
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),Integrated depth (L2),110
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),MBD / Func. boxplot,42
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),Isolation Forest,32
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),LOF,4
+airports,IAH + HOU [delays],disruption,Hurricane Beryl (Houston),Robust z-score,25
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),ED (L2),3
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),ED (Spatial),1
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),Integrated depth (L2),1
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),MBD / Func. boxplot,31
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),Isolation Forest,1
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),LOF,3
+airports,IAH + HOU [+cancel],all,Hurricane Beryl (Houston),Robust z-score,23
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),ED (L2),3
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),ED (Spatial),1
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),Integrated depth (L2),1
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),MBD / Func. boxplot,31
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),Isolation Forest,1
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),LOF,3
+airports,IAH + HOU [+cancel],disruption,Hurricane Beryl (Houston),Robust z-score,23
